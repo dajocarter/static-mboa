@@ -10,8 +10,6 @@ images:
 layout: sample
 ---
 
----
-
 # Heading 1
 
 ## Heading 2
