@@ -29,6 +29,7 @@ const paths = {
   'images': '_site/uploads/*',
   'sass': 'assets/*.scss',
   'scripts': [
+    'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
     // Add all npm packages first
     '_site/assets/*.js',
