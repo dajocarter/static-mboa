@@ -62,10 +62,10 @@ function handleErrors () {
  *
  * https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
  */
-gulp.task( 'jekyll-build', (done) => {
+function buildJekyll ( done ) {
   spawn( 'bundle', [ 'exec', 'jekyll', 'build', '--incremental' ], { stdio: 'inherit' } )
     .on( 'close', done );
-});
+}
 
 /**
  * Compile Sass and run stylesheet through PostCSS.
@@ -76,16 +76,10 @@ gulp.task( 'jekyll-build', (done) => {
  * https://www.npmjs.com/package/css-mqpacker
  * https://www.npmjs.com/package/cssnano
  */
-gulp.task( 'sass:build', [ 'jekyll-build' ], () =>
+function buildCss() {
   gulp.src( paths.sass.src )
-
-    // Deal with errors.
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-
-    // Wrap tasks in a sourcemap.
     .pipe( $.sourcemaps.init() )
-
-    // Compile Sass using LibSass.
     .pipe( $.sass( {
       'includePaths': [
         // Include paths here to use @import without paths
@@ -95,78 +89,26 @@ gulp.task( 'sass:build', [ 'jekyll-build' ], () =>
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
     } ) )
-
-    // Parse with PostCSS plugins.
     .pipe( $.postcss( [
       autoprefixer( ),
-      mqpacker( {
-        'sort': true
-      } ),
-      cssnano( {
-        'safe': true // Use safe optimizations.
-      } )
+      mqpacker( { 'sort': true } ),
+      cssnano( { 'safe': true } )
     ] ) )
-
     .pipe( $.rename( {
       'basename': 'project',
       'suffix': '.min'
     } ) )
-
-    // Create sourcemap.
     .pipe( $.sourcemaps.write() )
-
-    .pipe( gulp.dest( paths.sass.dist ) )
-);
-
-gulp.task( 'sass:serve', () =>
-  gulp.src( paths.sass.src )
-
-    // Deal with errors.
-    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-
-    // Wrap tasks in a sourcemap.
-    .pipe( $.sourcemaps.init() )
-
-    // Compile Sass using LibSass.
-    .pipe( $.sass( {
-      'includePaths': [
-        // Include paths here to use @import without paths
-        'node_modules/normalize.css/',
-        'node_modules/slick-carousel/slick/'
-      ],
-      'errLogToConsole': true,
-      'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
-    } ) )
-
-    // Parse with PostCSS plugins.
-    .pipe( $.postcss( [
-      autoprefixer( ),
-      mqpacker( {
-        'sort': true
-      } ),
-      cssnano( {
-        'safe': true // Use safe optimizations.
-      } )
-    ] ) )
-
-    .pipe( $.rename( {
-      'basename': 'project',
-      'suffix': '.min'
-    } ) )
-
-    // Create sourcemap.
-    .pipe( $.sourcemaps.write() )
-
     .pipe( gulp.dest( paths.sass.dist ) )
     .pipe( browserSync.stream() )
-);
+}
 
 /**
  * Copy font assets.
  *
  * https://www.npmjs.com/package/merge-stream
  */
-gulp.task('copy:build', [ 'jekyll-build' ], () => {
+function buildAssets() {
   const toAssetsCss = gulp.src([
       'node_modules/slick-carousel/slick/ajax-loader.gif'
     ])
@@ -178,26 +120,14 @@ gulp.task('copy:build', [ 'jekyll-build' ], () => {
     .pipe(gulp.dest('_site/assets/fonts'));
 
   merge(toAssetsCss, toAssetsFonts);
-});
+}
 
 /**
  * Optimize images.
  *
  * https://www.npmjs.com/package/gulp-imagemin
  */
-gulp.task( 'img:build', [ 'jekyll-build' ], () =>
-  gulp.src( paths.images.src )
-    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-    .pipe( $.imagemin( [
-      $.imagemin.gifsicle( { 'interlaced': true } ),
-      $.imagemin.jpegtran( { 'progressive': true } ),
-      $.imagemin.optipng( { 'optimizationLevel': 5 } ),
-      $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
-    ] ) )
-    .pipe( gulp.dest( paths.images.dist ) )
-);
-
-gulp.task( 'img:serve', () =>
+function buildImg() {
   gulp.src( paths.images.src )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.imagemin( [
@@ -208,7 +138,7 @@ gulp.task( 'img:serve', () =>
     ] ) )
     .pipe( gulp.dest( paths.images.dist ) )
     .pipe( browserSync.stream() )
-);
+}
 
 /**
  * Concatenate and minify JavaScript.
@@ -217,62 +147,24 @@ gulp.task( 'img:serve', () =>
  * https://www.npmjs.com/package/gulp-concat
   * https://www.npmjs.com/package/gulp-uglify
  */
-gulp.task( 'js:build', [ 'jekyll-build' ], () =>
+function buildJs() {
   gulp.src( paths.scripts.src )
-
-    // Deal with errors.
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-
-    // Start a sourcemap.
     .pipe( $.sourcemaps.init() )
-
-    // Concatenate partials into a single script.
     .pipe( $.concat( 'project.js' ) )
     .pipe( $.rename( { 'suffix': '.min' } ) )
     .pipe( $.uglify( { 'mangle': false } ) )
-
-    // Append the sourcemap to project.js.
     .pipe( $.sourcemaps.write( ) )
-
-    // Save project.js
-    .pipe( gulp.dest( paths.scripts.dist ) )
-);
-
-gulp.task( 'js:serve', () =>
-  gulp.src( paths.scripts.src )
-
-    // Deal with errors.
-    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-
-    // Start a sourcemap.
-    .pipe( $.sourcemaps.init() )
-
-    // Concatenate partials into a single script.
-    .pipe( $.concat( 'project.js' ) )
-    .pipe( $.rename( { 'suffix': '.min' } ) )
-    .pipe( $.uglify( { 'mangle': false } ) )
-
-    // Append the sourcemap to project.js.
-    .pipe( $.sourcemaps.write( ) )
-
-    // Save project.js
     .pipe( gulp.dest( paths.scripts.dist ) )
     .pipe( browserSync.stream() )
-);
-
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task( 'jekyll-rebuild', [ 'build' ], () => {
-  reload();
-});
+}
 
 /**
  * Wait for build, then launch the Server
  *
  * https://www.npmjs.com/package/browser-sync
  */
-gulp.task( 'watch', [ 'build' ], () => {
+function watch() {
   // Kick off BrowserSync.
   browserSync({
     'server': {
@@ -289,12 +181,23 @@ gulp.task( 'watch', [ 'build' ], () => {
   gulp.watch( paths.images.src, [ 'img:serve' ] );
   gulp.watch( paths.sass.src, [ 'sass:serve' ] );
   gulp.watch( paths.scripts.src, [ 'js:serve' ] );
-});
+}
 
 /**
  * Create individual tasks.
  */
-gulp.task( 'rebuild', [ 'jekyll-rebuild' ] );
+gulp.task( 'jekyll:build', buildJekyll );
+gulp.task( 'copy:build', [ 'jekyll:build' ], buildAssets);
+gulp.task( 'sass:build', [ 'jekyll:build' ], buildCss );
+gulp.task( 'img:build', [ 'jekyll:build' ], buildImg );
+gulp.task( 'js:build', [ 'jekyll:build' ], buildJs );
 gulp.task( 'build', [ 'img:build', 'sass:build', 'js:build', 'copy:build' ] );
+
+gulp.task( 'sass:serve', buildCss );
+gulp.task( 'img:serve', buildImg );
+gulp.task( 'js:serve', buildJs );
 gulp.task( 'serve', [ 'img:serve', 'sass:serve', 'js:serve', 'copy:build' ])
-gulp.task( 'default', [ 'build', 'watch' ] );
+
+gulp.task( 'rebuild', [ 'build' ], reload );
+gulp.task( 'watch', [ 'build' ], watch );
+gulp.task( 'default', [ 'watch' ] );
