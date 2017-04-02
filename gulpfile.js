@@ -27,7 +27,10 @@ const paths = {
     '!node_modules/*'
   ],
   'images': '_site/uploads/*',
-  'sass': 'assets/*.scss',
+  'sass': [
+    '_sass/**/*.scss',
+    'assets/*.scss'
+  ],
   'scripts': [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
@@ -67,25 +70,6 @@ gulp.task( 'jekyll-build', (done) => {
 });
 
 /**
- * Copy font assets.
- *
- * https://www.npmjs.com/package/merge-stream
- */
-gulp.task('assets', [ 'jekyll-build' ], () => {
-  const toAssetsCss = gulp.src([
-      'node_modules/slick-carousel/slick/ajax-loader.gif'
-    ])
-    .pipe(gulp.dest('_site/assets'));
-
-  const toAssetsFonts = gulp.src([
-      'node_modules/slick-carousel/slick/fonts/*'
-    ])
-    .pipe(gulp.dest('_site/assets/fonts'));
-
-  merge(toAssetsCss, toAssetsFonts);
-});
-
-/**
  * Optimize and minify css.
  *
  * https://www.npmjs.com/package/gulp-postcss
@@ -93,7 +77,7 @@ gulp.task('assets', [ 'jekyll-build' ], () => {
  * https://www.npmjs.com/package/css-mqpacker
  * https://www.npmjs.com/package/cssnano
  */
-gulp.task( 'postcss', ['jekyll-build'], () =>
+gulp.task( 'postcss', [ 'jekyll-build' ], () =>
   gulp.src( paths.css )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.sourcemaps.init() )
@@ -116,11 +100,30 @@ gulp.task( 'postcss', ['jekyll-build'], () =>
 );
 
 /**
+ * Copy font assets.
+ *
+ * https://www.npmjs.com/package/merge-stream
+ */
+gulp.task('assets', [ 'postcss' ], () => {
+  const toAssetsCss = gulp.src([
+      'node_modules/slick-carousel/slick/ajax-loader.gif'
+    ])
+    .pipe(gulp.dest('_site/assets'));
+
+  const toAssetsFonts = gulp.src([
+      'node_modules/slick-carousel/slick/fonts/*'
+    ])
+    .pipe(gulp.dest('_site/assets/fonts'));
+
+  merge(toAssetsCss, toAssetsFonts);
+});
+
+/**
  * Optimize images.
  *
  * https://www.npmjs.com/package/gulp-imagemin
  */
-gulp.task( 'imagemin', [ 'jekyll-build' ], () =>
+gulp.task( 'imagemin', [ 'postcss' ], () =>
   gulp.src( paths.images )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.imagemin( [
@@ -140,7 +143,7 @@ gulp.task( 'imagemin', [ 'jekyll-build' ], () =>
  * https://www.npmjs.com/package/gulp-concat
   * https://www.npmjs.com/package/gulp-uglify
  */
-gulp.task( 'uglify', [ 'jekyll-build' ], () =>
+gulp.task( 'uglify', [ 'postcss' ], () =>
   gulp.src( paths.scripts )
 
     // Deal with errors.
@@ -166,16 +169,16 @@ gulp.task( 'uglify', [ 'jekyll-build' ], () =>
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task( 'jekyll-rebuild', [ 'jekyll-build' ], () => {
+gulp.task( 'jekyll-rebuild', [ 'build' ], () => {
   reload();
 });
 
 /**
- * Wait for jekyll-build, then launch the Server
+ * Wait for build, then launch the Server
  *
  * https://www.npmjs.com/package/browser-sync
  */
-gulp.task( 'watch', [ 'jekyll-build' ], () => {
+gulp.task( 'watch', [ 'build' ], () => {
   // Kick off BrowserSync.
   browserSync({
     'server': {
@@ -188,7 +191,6 @@ gulp.task( 'watch', [ 'jekyll-build' ], () => {
   });
 
   // Run tasks when files change.
-  gulp.watch( paths.css, [ 'css' ] );
   gulp.watch( paths.html, [ 'rebuild' ] );
   gulp.watch( paths.images, [ 'img' ] );
   gulp.watch( paths.sass, [ 'rebuild' ] );
@@ -201,6 +203,5 @@ gulp.task( 'watch', [ 'jekyll-build' ], () => {
 gulp.task( 'rebuild', [ 'jekyll-rebuild' ] );
 gulp.task( 'img', [ 'imagemin' ] );
 gulp.task( 'js', [ 'uglify' ] );
-gulp.task( 'css', [ 'postcss' ] );
-gulp.task( 'build', [ 'css', 'js', 'img', 'assets' ] );
+gulp.task( 'build', [ 'js', 'img', 'assets' ] );
 gulp.task( 'default', [ 'build', 'watch' ] );
