@@ -12,7 +12,7 @@ layout: default
     {% unless page.images == blank %}
     <div class="slick">
       {% for imageSrc in page.images %}
-        <img src="{{ imageSrc }}" alt="carousel image">
+        <img src="{{ imageSrc }}" alt="carousel image {{ forloop.index }}">
       {% endfor %}
     </div>
     {% endunless %}
