@@ -9,7 +9,16 @@ layout: default
   </header>
 
   <div class="post-content">
+    {% unless page.images == blank %}
+    <div class="slick">
+      {% for imageSrc in page.images %}
+        <img src="imageSrc" alt="carousel image">
+      {% endfor %}
+    </div>
+    {% endunless %}
+
     {{ content }}
   </div>
+
 
 </article>
