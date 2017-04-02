@@ -1,6 +1,7 @@
 // Require our dependencies
 const gulp = require( 'gulp' );
 const $ = require( 'gulp-load-plugins' )();
+const merge = require( 'merge-stream' );
 const spawn = require( 'child_process' ).spawn;
 const autoprefixer = require( 'autoprefixer' );
 const mqpacker = require( 'css-mqpacker' );
@@ -11,8 +12,12 @@ const reload = browserSync.reload;
 // Set assets paths.
 const paths = {
   'css': [
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/slick-carousel/slick/slick-theme.css',
+    // Add all npm packages first
     '_site/assets/*.css',
-    '!_site/assets/*.min.css'
+    '!_site/assets/project.min.css'
   ],
   'html': [
     '_includes/*.html',
@@ -24,8 +29,10 @@ const paths = {
   'images': '_site/uploads/*',
   'sass': 'assets/*.scss',
   'scripts': [
-    'assets/*.js',
-    '!assets/*.min.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    // Add all npm packages first
+    '_site/assets/*.js',
+    '!_site/assets/project.min.js'
   ]
 };
 
@@ -48,6 +55,26 @@ function handleErrors () {
 }
 
 /**
+ * Copy font assets.
+ *
+ * https://www.npmjs.com/package/merge-stream
+ */
+gulp.task('assets', [ 'jekyll-build' ], () => {
+  const toAssetsCss = gulp.src([
+      'node_modules/slick-carousel/slick/ajax-loader.gif'
+    ])
+    .pipe(gulp.dest('_site/assets'));
+
+  const toAssetsFonts = gulp.src([
+      'node_modules/font-awesome/fonts/*',
+      'node_modules/slick-carousel/slick/fonts/*'
+    ])
+    .pipe(gulp.dest('_site/assets/fonts'));
+
+  merge(toAssetsCss, toAssetsFonts);
+});
+
+/**
  * Optimize and minify css.
  *
  * https://www.npmjs.com/package/gulp-postcss
@@ -58,6 +85,7 @@ function handleErrors () {
 gulp.task( 'postcss', ['jekyll-build'], () =>
   gulp.src( paths.css )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+    .pipe( $.sourcemaps.init() )
     // Parse with PostCSS plugins.
     .pipe( $.postcss( [
       autoprefixer( ),
@@ -68,7 +96,9 @@ gulp.task( 'postcss', ['jekyll-build'], () =>
         'safe': true // Use safe optimizations.
       } )
     ] ) )
+    .pipe( $.concat( 'project.css' ) )
     .pipe( $.rename( { 'suffix': '.min' } ) )
+    .pipe( $.sourcemaps.write( '.' ) )
     .pipe( gulp.dest( '_site/assets' ) )
     .pipe( browserSync.stream() )
     .pipe($.notify( { message: 'postcss task complete' } ) )
@@ -98,7 +128,7 @@ gulp.task( 'imagemin', [ 'jekyll-build' ], () =>
  * https://www.npmjs.com/package/gulp-concat
  * https://www.npmjs.com/package/gulp-sourcemaps
  */
-gulp.task( 'concat', () =>
+gulp.task( 'concat', [ 'jekyll-build' ], () =>
   gulp.src( paths.scripts )
 
     // Deal with errors.
@@ -111,7 +141,7 @@ gulp.task( 'concat', () =>
     .pipe( $.concat( 'project.js' ) )
 
     // Append the sourcemap to project.js.
-    .pipe( $.sourcemaps.write() )
+    .pipe( $.sourcemaps.write( '.' ) )
 
     // Save project.js
     .pipe( gulp.dest( '_site/assets' ) )
@@ -125,7 +155,7 @@ gulp.task( 'concat', () =>
   * https://www.npmjs.com/package/gulp-uglify
   */
 gulp.task( 'uglify', [ 'concat' ], () =>
-  gulp.src( paths.scripts )
+  gulp.src( '_site/assets/project.js' )
     .pipe( $.rename( { 'suffix': '.min' } ) )
     .pipe( $.uglify( { 'mangle': false } ) )
     .pipe( gulp.dest( '_site/assets' ) )
@@ -187,5 +217,5 @@ gulp.task( 'rebuild', [ 'jekyll-rebuild' ] );
 gulp.task( 'img', [ 'imagemin' ] );
 gulp.task( 'js', [ 'uglify' ] );
 gulp.task( 'css', [ 'postcss' ] );
-gulp.task( 'build', [ 'jekyll-build', 'css', 'js', 'img' ] );
+gulp.task( 'build', [ 'jekyll-build', 'css', 'js', 'img', 'assets' ] );
 gulp.task( 'default', [ 'build', 'watch' ] );
