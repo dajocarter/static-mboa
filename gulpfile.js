@@ -63,23 +63,39 @@ function handleErrors () {
  * https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
  */
 gulp.task( 'jekyll-build', (done) => {
-  $.notify( { message: 'Building Jekyll' } );
   spawn( 'bundle', [ 'exec', 'jekyll', 'build', '--incremental' ], { stdio: 'inherit' } )
     .on( 'close', done );
 });
 
 /**
- * Optimize and minify css.
+ * Compile Sass and run stylesheet through PostCSS.
  *
+ * https://www.npmjs.com/package/gulp-sass
  * https://www.npmjs.com/package/gulp-postcss
  * https://www.npmjs.com/package/autoprefixer
  * https://www.npmjs.com/package/css-mqpacker
  * https://www.npmjs.com/package/cssnano
  */
-gulp.task( 'postcss', [ 'jekyll-build' ], () =>
-  gulp.src( paths.css )
+gulp.task( 'sass:build', [ 'jekyll-build' ], () =>
+  gulp.src( paths.sass.src )
+
+    // Deal with errors.
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+
+    // Wrap tasks in a sourcemap.
     .pipe( $.sourcemaps.init() )
+
+    // Compile Sass using LibSass.
+    .pipe( $.sass( {
+      'includePaths': [
+        // Include paths here to use @import without paths
+        'node_modules/normalize.css/',
+        'node_modules/slick-carousel/slick/'
+      ],
+      'errLogToConsole': true,
+      'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
+    } ) )
+
     // Parse with PostCSS plugins.
     .pipe( $.postcss( [
       autoprefixer( ),
@@ -90,12 +106,59 @@ gulp.task( 'postcss', [ 'jekyll-build' ], () =>
         'safe': true // Use safe optimizations.
       } )
     ] ) )
-    .pipe( $.concat( 'project.css' ) )
-    .pipe( $.rename( { 'suffix': '.min' } ) )
-    .pipe( $.sourcemaps.write( '.' ) )
-    .pipe( gulp.dest( '_site/assets' ) )
+
+    .pipe( $.rename( {
+      'basename': 'project',
+      'suffix': '.min'
+    } ) )
+
+    // Create sourcemap.
+    .pipe( $.sourcemaps.write() )
+
+    .pipe( gulp.dest( paths.sass.dist ) )
+);
+
+gulp.task( 'sass:serve', () =>
+  gulp.src( paths.sass.src )
+
+    // Deal with errors.
+    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+
+    // Wrap tasks in a sourcemap.
+    .pipe( $.sourcemaps.init() )
+
+    // Compile Sass using LibSass.
+    .pipe( $.sass( {
+      'includePaths': [
+        // Include paths here to use @import without paths
+        'node_modules/normalize.css/',
+        'node_modules/slick-carousel/slick/'
+      ],
+      'errLogToConsole': true,
+      'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
+    } ) )
+
+    // Parse with PostCSS plugins.
+    .pipe( $.postcss( [
+      autoprefixer( ),
+      mqpacker( {
+        'sort': true
+      } ),
+      cssnano( {
+        'safe': true // Use safe optimizations.
+      } )
+    ] ) )
+
+    .pipe( $.rename( {
+      'basename': 'project',
+      'suffix': '.min'
+    } ) )
+
+    // Create sourcemap.
+    .pipe( $.sourcemaps.write() )
+
+    .pipe( gulp.dest( paths.sass.dist ) )
     .pipe( browserSync.stream() )
-    .pipe($.notify( { message: 'css task complete' } ) )
 );
 
 /**
@@ -103,7 +166,7 @@ gulp.task( 'postcss', [ 'jekyll-build' ], () =>
  *
  * https://www.npmjs.com/package/merge-stream
  */
-gulp.task('assets', [ 'postcss' ], () => {
+gulp.task('copy:build', [ 'jekyll-build' ], () => {
   const toAssetsCss = gulp.src([
       'node_modules/slick-carousel/slick/ajax-loader.gif'
     ])
@@ -122,8 +185,8 @@ gulp.task('assets', [ 'postcss' ], () => {
  *
  * https://www.npmjs.com/package/gulp-imagemin
  */
-gulp.task( 'imagemin', [ 'postcss' ], () =>
-  gulp.src( paths.images )
+gulp.task( 'img:build', [ 'jekyll-build' ], () =>
+  gulp.src( paths.images.src )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.imagemin( [
       $.imagemin.gifsicle( { 'interlaced': true } ),
@@ -131,8 +194,20 @@ gulp.task( 'imagemin', [ 'postcss' ], () =>
       $.imagemin.optipng( { 'optimizationLevel': 5 } ),
       $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
     ] ) )
-    .pipe( gulp.dest( '_site/uploads' ) )
-    .pipe($.notify( { message: 'image task complete' } ) )
+    .pipe( gulp.dest( paths.images.dist ) )
+);
+
+gulp.task( 'img:serve', () =>
+  gulp.src( paths.images.src )
+    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+    .pipe( $.imagemin( [
+      $.imagemin.gifsicle( { 'interlaced': true } ),
+      $.imagemin.jpegtran( { 'progressive': true } ),
+      $.imagemin.optipng( { 'optimizationLevel': 5 } ),
+      $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
+    ] ) )
+    .pipe( gulp.dest( paths.images.dist ) )
+    .pipe( browserSync.stream() )
 );
 
 /**
@@ -142,8 +217,8 @@ gulp.task( 'imagemin', [ 'postcss' ], () =>
  * https://www.npmjs.com/package/gulp-concat
   * https://www.npmjs.com/package/gulp-uglify
  */
-gulp.task( 'uglify', [ 'postcss' ], () =>
-  gulp.src( paths.scripts )
+gulp.task( 'js:build', [ 'jekyll-build' ], () =>
+  gulp.src( paths.scripts.src )
 
     // Deal with errors.
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
@@ -157,12 +232,32 @@ gulp.task( 'uglify', [ 'postcss' ], () =>
     .pipe( $.uglify( { 'mangle': false } ) )
 
     // Append the sourcemap to project.js.
-    .pipe( $.sourcemaps.write( '.' ) )
+    .pipe( $.sourcemaps.write( ) )
 
     // Save project.js
-    .pipe( gulp.dest( '_site/assets' ) )
+    .pipe( gulp.dest( paths.scripts.dist ) )
+);
+
+gulp.task( 'js:serve', () =>
+  gulp.src( paths.scripts.src )
+
+    // Deal with errors.
+    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+
+    // Start a sourcemap.
+    .pipe( $.sourcemaps.init() )
+
+    // Concatenate partials into a single script.
+    .pipe( $.concat( 'project.js' ) )
+    .pipe( $.rename( { 'suffix': '.min' } ) )
+    .pipe( $.uglify( { 'mangle': false } ) )
+
+    // Append the sourcemap to project.js.
+    .pipe( $.sourcemaps.write( ) )
+
+    // Save project.js
+    .pipe( gulp.dest( paths.scripts.dist ) )
     .pipe( browserSync.stream() )
-    .pipe($.notify( { message: 'js task complete' } ) )
 );
 
 /**
@@ -191,16 +286,15 @@ gulp.task( 'watch', [ 'build' ], () => {
 
   // Run tasks when files change.
   gulp.watch( paths.html, [ 'rebuild' ] );
-  gulp.watch( paths.images, [ 'img' ] );
-  gulp.watch( paths.sass, [ 'rebuild' ] );
-  gulp.watch( paths.scripts, [ 'js' ] );
+  gulp.watch( paths.images.src, [ 'img:serve' ] );
+  gulp.watch( paths.sass.src, [ 'sass:serve' ] );
+  gulp.watch( paths.scripts.src, [ 'js:serve' ] );
 });
 
 /**
  * Create individual tasks.
  */
 gulp.task( 'rebuild', [ 'jekyll-rebuild' ] );
-gulp.task( 'img', [ 'imagemin' ] );
-gulp.task( 'js', [ 'uglify' ] );
-gulp.task( 'build', [ 'js', 'img', 'assets' ] );
+gulp.task( 'build', [ 'img:build', 'sass:build', 'js:build', 'copy:build' ] );
+gulp.task( 'serve', [ 'img:serve', 'sass:serve', 'js:serve', 'copy:build' ])
 gulp.task( 'default', [ 'build', 'watch' ] );
