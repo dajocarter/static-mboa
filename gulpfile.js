@@ -11,33 +11,32 @@ const reload = browserSync.reload;
 
 // Set assets paths.
 const paths = {
-  'css': [
-    'node_modules/normalize.css/normalize.css',
-    'node_modules/slick-carousel/slick/slick.css',
-    'node_modules/slick-carousel/slick/slick-theme.css',
-    // Add all npm packages first
-    '_site/assets/*.css',
-    '!_site/assets/project.min.css'
-  ],
   'html': [
     '_includes/*.html',
     '_layouts/*.html',
     '_posts/**/*.md',
+    '_posts/**/*.markdown',
     '*.md',
+    '*.markdown',
     '!node_modules/*'
   ],
-  'images': '_site/uploads/*',
-  'sass': [
-    '_sass/**/*.scss',
-    'assets/*.scss'
-  ],
-  'scripts': [
-    'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js',
-    // Add all npm packages first
-    '_site/assets/*.js',
-    '!_site/assets/project.min.js'
-  ]
+  'images': {
+    'src': '_uploads/*',
+    'dist': '_site/uploads/*'
+  },
+  'sass': {
+    'src': [ '_assets/scss/*.scss' ],
+    'dist': '_site/assets'
+  },
+  'scripts': {
+    'src': [
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/slick-carousel/slick/slick.js',
+      // Add all npm packages first
+      '_assets/js/**/*.js'
+    ],
+    'dist': '_site/assets'
+  }
 };
 
 /**
