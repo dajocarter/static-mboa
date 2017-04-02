@@ -78,7 +78,6 @@ gulp.task('assets', [ 'jekyll-build' ], () => {
     .pipe(gulp.dest('_site/assets'));
 
   const toAssetsFonts = gulp.src([
-      'node_modules/font-awesome/fonts/*',
       'node_modules/slick-carousel/slick/fonts/*'
     ])
     .pipe(gulp.dest('_site/assets/fonts'));
@@ -113,7 +112,7 @@ gulp.task( 'postcss', ['jekyll-build'], () =>
     .pipe( $.sourcemaps.write( '.' ) )
     .pipe( gulp.dest( '_site/assets' ) )
     .pipe( browserSync.stream() )
-    .pipe($.notify( { message: 'postcss task complete' } ) )
+    .pipe($.notify( { message: 'css task complete' } ) )
 );
 
 /**
@@ -131,16 +130,17 @@ gulp.task( 'imagemin', [ 'jekyll-build' ], () =>
       $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
     ] ) )
     .pipe( gulp.dest( '_site/uploads' ) )
-    .pipe($.notify( { message: 'imagemin task complete' } ) )
+    .pipe($.notify( { message: 'image task complete' } ) )
 );
 
 /**
- * Concatenate and transform JavaScript.
+ * Concatenate and minify JavaScript.
  *
- * https://www.npmjs.com/package/gulp-concat
  * https://www.npmjs.com/package/gulp-sourcemaps
+ * https://www.npmjs.com/package/gulp-concat
+  * https://www.npmjs.com/package/gulp-uglify
  */
-gulp.task( 'concat', [ 'jekyll-build' ], () =>
+gulp.task( 'uglify', [ 'jekyll-build' ], () =>
   gulp.src( paths.scripts )
 
     // Deal with errors.
@@ -151,6 +151,8 @@ gulp.task( 'concat', [ 'jekyll-build' ], () =>
 
     // Concatenate partials into a single script.
     .pipe( $.concat( 'project.js' ) )
+    .pipe( $.rename( { 'suffix': '.min' } ) )
+    .pipe( $.uglify( { 'mangle': false } ) )
 
     // Append the sourcemap to project.js.
     .pipe( $.sourcemaps.write( '.' ) )
@@ -158,20 +160,7 @@ gulp.task( 'concat', [ 'jekyll-build' ], () =>
     // Save project.js
     .pipe( gulp.dest( '_site/assets' ) )
     .pipe( browserSync.stream() )
-    .pipe($.notify( { message: 'concat task complete' } ) )
-);
-
-/**
-  * Minify compiled JavaScript.
-  *
-  * https://www.npmjs.com/package/gulp-uglify
-  */
-gulp.task( 'uglify', [ 'concat' ], () =>
-  gulp.src( '_site/assets/project.js' )
-    .pipe( $.rename( { 'suffix': '.min' } ) )
-    .pipe( $.uglify( { 'mangle': false } ) )
-    .pipe( gulp.dest( '_site/assets' ) )
-    .pipe($.notify( { message: 'uglify task complete' } ) )
+    .pipe($.notify( { message: 'js task complete' } ) )
 );
 
 /**
@@ -213,5 +202,5 @@ gulp.task( 'rebuild', [ 'jekyll-rebuild' ] );
 gulp.task( 'img', [ 'imagemin' ] );
 gulp.task( 'js', [ 'uglify' ] );
 gulp.task( 'css', [ 'postcss' ] );
-gulp.task( 'build', [ 'jekyll-build', 'css', 'js', 'img', 'assets' ] );
+gulp.task( 'build', [ 'css', 'js', 'img', 'assets' ] );
 gulp.task( 'default', [ 'build', 'watch' ] );
