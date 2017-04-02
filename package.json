@@ -36,7 +36,8 @@
     "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.5.0",
-    "gulp-uglify": "^2.1.2"
+    "gulp-uglify": "^2.1.2",
+    "merge-stream": "^1.0.1"
   },
   "dependencies": {
     "normalize.css": "^6.0.0",
