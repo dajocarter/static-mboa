@@ -56,6 +56,17 @@ function handleErrors () {
 }
 
 /**
+ * Build the Jekyll Site
+ *
+ * https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
+ */
+gulp.task( 'jekyll-build', (done) => {
+  $.notify( { message: 'Building Jekyll' } );
+  spawn( 'bundle', [ 'exec', 'jekyll', 'build', '--incremental' ], { stdio: 'inherit' } )
+    .on( 'close', done );
+});
+
+/**
  * Copy font assets.
  *
  * https://www.npmjs.com/package/merge-stream
@@ -163,24 +174,6 @@ gulp.task( 'uglify', [ 'concat' ], () =>
     .pipe($.notify( { message: 'uglify task complete' } ) )
 );
 
-
-/**
- * Process tasks and reload browsers on file changes.
- *
- * https://www.npmjs.com/package/browser-sync
- */
-
-/**
- * Build the Jekyll Site
- *
- * https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
- */
-gulp.task( 'jekyll-build', (done) => {
-  $.notify( { message: 'Building Jekyll' } );
-  spawn( 'bundle', [ 'exec', 'jekyll', 'build', '--incremental' ], { stdio: 'inherit' } )
-    .on( 'close', done );
-});
-
 /**
  * Rebuild Jekyll & do page reload
  */
@@ -190,6 +183,8 @@ gulp.task( 'jekyll-rebuild', [ 'jekyll-build' ], () => {
 
 /**
  * Wait for jekyll-build, then launch the Server
+ *
+ * https://www.npmjs.com/package/browser-sync
  */
 gulp.task( 'watch', [ 'jekyll-build' ], () => {
   // Kick off BrowserSync.
