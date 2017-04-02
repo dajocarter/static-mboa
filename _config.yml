@@ -40,3 +40,4 @@ exclude:
 - README.md
 - node_modules/
 - package.json
+- gulpfile.js
