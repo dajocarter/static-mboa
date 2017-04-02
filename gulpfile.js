@@ -21,7 +21,7 @@ const paths = {
     '*.md',
     '!node_modules/*'
   ],
-  'images': 'assets/*.{gif,GIF,jpg,JPG,jpeg,JPEG,png,PNG}',
+  'images': '_site/uploads/*',
   'sass': 'assets/*.scss',
   'scripts': [
     'assets/*.js',
@@ -79,15 +79,16 @@ gulp.task( 'postcss', ['jekyll-build'], () =>
  *
  * https://www.npmjs.com/package/gulp-imagemin
  */
-gulp.task( 'imagemin', () =>
+gulp.task( 'imagemin', [ 'jekyll-build' ], () =>
   gulp.src( paths.images )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
-    .pipe( $.imagemin( {
-      'optimizationLevel': 5,
-      'progressive': true,
-      'interlaced': true
-    } ) )
-    .pipe( gulp.dest( '_site/assets' ) )
+    .pipe( $.imagemin( [
+      $.imagemin.gifsicle( { 'interlaced': true } ),
+      $.imagemin.jpegtran( { 'progressive': true } ),
+      $.imagemin.optipng( { 'optimizationLevel': 5 } ),
+      $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
+    ] ) )
+    .pipe( gulp.dest( '_site/uploads' ) )
     .pipe($.notify( { message: 'imagemin task complete' } ) )
 );
 
