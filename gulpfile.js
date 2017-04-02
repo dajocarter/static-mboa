@@ -2,7 +2,6 @@
 const gulp = require( 'gulp' );
 const $ = require( 'gulp-load-plugins' )();
 const merge = require( 'merge-stream' );
-const spawn = require( 'child_process' ).spawn;
 const autoprefixer = require( 'autoprefixer' );
 const mqpacker = require( 'css-mqpacker' );
 const cssnano = require( 'cssnano' );
@@ -60,11 +59,10 @@ function handleErrors () {
 /**
  * Build the Jekyll Site
  *
- * https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
+ * https://www.npmjs.com/package/gulp-shell
  */
-function buildJekyll ( done ) {
-  spawn( 'bundle', [ 'exec', 'jekyll', 'build', '--incremental' ], { stdio: 'inherit' } )
-    .on( 'close', done );
+function buildJekyll() {
+  $.shell.task( 'bundle exec jekyll build --incremental' )
 }
 
 /**
