@@ -1,5 +1,5 @@
 ---
-title: Static Mboa
+title: My Brain on Histology
 timezone: America/Indiana/Indianapolis
 collections:
   posts:
@@ -8,3 +8,32 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
+-email: your-email@domain.com
+ -description: ''
+ -baseurl: ''
+ -url: ''
+ -twitter_username: jekyllrb
+ -github_username: jekyll
+ -markdown: kramdown
+ -gems:
+ -- jekyll-feed
+ -exclude:
+ -- Gemfile
+ -- Gemfile.lock
+ -- README.md
+ -- node_modules/
+ -- package.json
+ -- gulpfile.js
