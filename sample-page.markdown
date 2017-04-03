@@ -1,6 +1,6 @@
 ---
 title: Sample Page
-date: 2017-04-02 04:02:00 Z
+date: 2017-04-02 00:02:00 -04:00
 images:
 - "/uploads/matt-jones-94160.jpg"
 - "/uploads/alexander-rotker-107460.jpg"
