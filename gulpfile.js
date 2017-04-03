@@ -62,7 +62,8 @@ function handleErrors () {
  * https://www.npmjs.com/package/gulp-shell
  */
 function buildJekyll() {
-  $.shell.task( 'bundle exec jekyll build --incremental' )
+  gulp.src( '' )
+    .pipe($.run('bundle exec jekyll build'))
 }
 
 /**
