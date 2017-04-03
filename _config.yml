@@ -1,6 +1,6 @@
 ---
-title: My Brain On Anatomy
-timezone: UTC
+title: My Brain on Anatomy
+timezone: America/Indiana/Indianapolis
 collections:
   posts:
     title: Posts
@@ -21,19 +21,19 @@ defaults:
   values:
     layout: page
 permalink: pretty
--email: your-email@domain.com
- -description: ''
- -baseurl: ''
- -url: ''
- -twitter_username: jekyllrb
- -github_username: jekyll
- -markdown: kramdown
- -gems:
- -- jekyll-feed
- -exclude:
- -- Gemfile
- -- Gemfile.lock
- -- README.md
- -- node_modules/
- -- package.json
- -- gulpfile.js
+email: your-email@domain.com
+description: ''
+baseurl: ''
+url: ''
+twitter_username: jekyllrb
+github_username: jekyll
+markdown: kramdown
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- node_modules/
+- package.json
+- gulpfile.js
