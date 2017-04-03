@@ -2,41 +2,12 @@
 const gulp = require( 'gulp' );
 const $ = require( 'gulp-load-plugins' )();
 const merge = require( 'merge-stream' );
+const del = require( 'del' );
+const runSequence = require( 'run-sequence' );
 const autoprefixer = require( 'autoprefixer' );
 const mqpacker = require( 'css-mqpacker' );
 const cssnano = require( 'cssnano' );
-const browserSync = require( 'browser-sync' );
-const reload = browserSync.reload;
-
-// Set assets paths.
-const paths = {
-  'html': [
-    '_includes/*.html',
-    '_layouts/*.html',
-    '_posts/**/*.md',
-    '_posts/**/*.markdown',
-    '*.md',
-    '*.markdown',
-    '!node_modules/*'
-  ],
-  'images': {
-    'src': '_uploads/*',
-    'dist': '_site/uploads/*'
-  },
-  'sass': {
-    'src': [ '_assets/scss/*.scss' ],
-    'dist': '_site/assets'
-  },
-  'scripts': {
-    'src': [
-      'node_modules/jquery/dist/jquery.js',
-      'node_modules/slick-carousel/slick/slick.js',
-      // Add all npm packages first
-      '_assets/js/**/*.js'
-    ],
-    'dist': '_site/assets'
-  }
-};
+const browserSync = require( 'browser-sync' ).create();
 
 /**
  * Handle errors and alert the user.
@@ -57,14 +28,33 @@ function handleErrors () {
 }
 
 /**
- * Build the Jekyll Site
+ * Copy fonts and assets.
  *
- * https://www.npmjs.com/package/gulp-shell
+ * https://www.npmjs.com/package/merge-stream
  */
-function buildJekyll() {
-  gulp.src( '' )
-    .pipe($.run('bundle exec jekyll build'))
-}
+gulp.task( 'build:fonts', () => {
+  const toAssetsCss = gulp.src([
+      'node_modules/slick-carousel/slick/ajax-loader.gif'
+    ])
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'));
+
+  const toAssetsFonts = gulp.src([
+      'node_modules/slick-carousel/slick/fonts/*'
+    ])
+    .pipe(gulp.dest('assets/fonts'))
+    .pipe(gulp.dest('_site/assets/fonts'));
+
+  merge(toAssetsCss, toAssetsFonts);
+});
+
+gulp.task( 'clean:fonts', ( callback ) => {
+  del([
+    'assets/fonts',
+    '_site/assets/fonts'
+  ]);
+  callback();
+});
 
 /**
  * Compile Sass and run stylesheet through PostCSS.
@@ -75,8 +65,8 @@ function buildJekyll() {
  * https://www.npmjs.com/package/css-mqpacker
  * https://www.npmjs.com/package/cssnano
  */
-function buildCss() {
-  gulp.src( paths.sass.src )
+gulp.task( 'build:styles', () =>
+  gulp.src( '_assets/scss/**/*.scss' )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.sourcemaps.init() )
     .pipe( $.sass( {
@@ -98,36 +88,26 @@ function buildCss() {
       'suffix': '.min'
     } ) )
     .pipe( $.sourcemaps.write() )
-    .pipe( gulp.dest( paths.sass.dist ) )
+    .pipe( gulp.dest( 'assets/css' ) )
+    .pipe( gulp.dest( '_site/assets/css' ) )
     .pipe( browserSync.stream() )
-}
+);
 
-/**
- * Copy font assets.
- *
- * https://www.npmjs.com/package/merge-stream
- */
-function buildAssets() {
-  const toAssetsCss = gulp.src([
-      'node_modules/slick-carousel/slick/ajax-loader.gif'
-    ])
-    .pipe(gulp.dest('_site/assets'));
-
-  const toAssetsFonts = gulp.src([
-      'node_modules/slick-carousel/slick/fonts/*'
-    ])
-    .pipe(gulp.dest('_site/assets/fonts'));
-
-  merge(toAssetsCss, toAssetsFonts);
-}
+gulp.task( 'clean:styles', ( callback ) => {
+  del([
+    'assets/css/main.min.css',
+    '_site/assets/css/main.min.css'
+  ]);
+  callback();
+});
 
 /**
  * Optimize images.
  *
  * https://www.npmjs.com/package/gulp-imagemin
  */
-function buildImg() {
-  gulp.src( paths.images.src )
+gulp.task( 'build:images', () =>
+  gulp.src( '_uploads/**/*' )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.imagemin( [
       $.imagemin.gifsicle( { 'interlaced': true } ),
@@ -135,9 +115,15 @@ function buildImg() {
       $.imagemin.optipng( { 'optimizationLevel': 5 } ),
       $.imagemin.svgo( { plugins: [ { removeViewBox: true } ] } )
     ] ) )
-    .pipe( gulp.dest( paths.images.dist ) )
+    .pipe( gulp.dest( '_uploads' ) )
+    .pipe( gulp.dest( '_site/uploads' ) )
     .pipe( browserSync.stream() )
-}
+);
+
+gulp.task( 'clean:images', ( callback ) => {
+  del( [ '_site/uploads' ] );
+  callback();
+});
 
 /**
  * Concatenate and minify JavaScript.
@@ -146,57 +132,125 @@ function buildImg() {
  * https://www.npmjs.com/package/gulp-concat
   * https://www.npmjs.com/package/gulp-uglify
  */
-function buildJs() {
-  gulp.src( paths.scripts.src )
+gulp.task( 'build:scripts', () =>
+  gulp.src( [
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    // Add all npm packages first
+    '_assets/js/**/*.js'
+  ] )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.sourcemaps.init() )
     .pipe( $.concat( 'project.js' ) )
     .pipe( $.rename( { 'suffix': '.min' } ) )
     .pipe( $.uglify( { 'mangle': false } ) )
     .pipe( $.sourcemaps.write( ) )
-    .pipe( gulp.dest( paths.scripts.dist ) )
+    .pipe( gulp.dest( 'assets/js' ) )
+    .pipe( gulp.dest( '_site/assets/js' ) )
     .pipe( browserSync.stream() )
-}
+);
+
+gulp.task( 'clean:scripts', ( callback ) => {
+  del([
+    'assets/js/main.min.js',
+    '_site/assets/js/main.min.js'
+  ]);
+  callback();
+});
 
 /**
- * Wait for build, then launch the Server
+ * Use Jekyll to build the site
+ *
+ * https://www.npmjs.com/package/gulp-shell
+ */
+gulp.task( 'build:jekyll', () =>
+  gulp.src('')
+    .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
+    .pipe($.run('bundle exec jekyll build'))
+);
+
+gulp.task( 'clean:jekyll', ( callback ) => {
+  del( [ '_site' ] );
+  callback();
+});
+
+/**
+ * Culminating tasks
+ *
+ * https://www.npmjs.com/package/run-sequence
+ */
+gulp.task( 'clean', [
+  'clean:jekyll',
+  'clean:fonts',
+  'clean:images',
+  'clean:scripts',
+  'clean:styles'
+]);
+
+gulp.task( 'build', ( callback ) =>
+  runSequence(
+    'clean',
+    [ 'build:scripts', 'build:images', 'build:styles', 'build:fonts' ],
+    'build:jekyll',
+    callback
+  )
+);
+
+/**
+ * Server tasks
  *
  * https://www.npmjs.com/package/browser-sync
  */
-function watch() {
+gulp.task('build:jekyll:watch', ['build:jekyll'], ( callback ) => {
+    browserSync.reload();
+    callback();
+});
+
+gulp.task('build:scripts:watch', ['build:scripts'], ( callback ) => {
+    browserSync.reload();
+    callback();
+});
+
+gulp.task( 'serve', [ 'build' ], () => {
   // Kick off BrowserSync.
-  browserSync({
+  browserSync.init({
     'server': {
         'baseDir': '_site'
     },
     'injectChanges': true,   // Auto inject changes instead of full reload.
+    'ghostMode': false,      // Toggle to mirror clicks, reloads etc. (performance)
+    'open': false,
     'watchOptions': {
       'debounceDelay': 1000  // Wait 1 second before injecting.
     }
   });
 
-  // Run tasks when files change.
-  gulp.watch( paths.html, [ 'rebuild' ] );
-  gulp.watch( paths.images.src, [ 'img:serve' ] );
-  gulp.watch( paths.sass.src, [ 'sass:serve' ] );
-  gulp.watch( paths.scripts.src, [ 'js:serve' ] );
-}
+  // Watch site settings.
+  gulp.watch(['_config.yml'], ['build:jekyll:watch']);
 
-/**
- * Create individual tasks.
- */
-gulp.task( 'jekyll:build', buildJekyll );
-gulp.task( 'copy:build', [ 'jekyll:build' ], buildAssets);
-gulp.task( 'sass:build', [ 'jekyll:build' ], buildCss );
-gulp.task( 'img:build', [ 'jekyll:build' ], buildImg );
-gulp.task( 'js:build', [ 'jekyll:build' ], buildJs );
-gulp.task( 'build', [ 'img:build', 'sass:build', 'js:build', 'copy:build' ] );
+  // Watch .scss files; changes are piped to browserSync.
+  gulp.watch('_assets/scss/**/*.scss', ['build:styles']);
 
-gulp.task( 'sass:serve', buildCss );
-gulp.task( 'img:serve', buildImg );
-gulp.task( 'js:serve', buildJs );
-gulp.task( 'serve', [ 'img:serve', 'sass:serve', 'js:serve', 'copy:build' ])
+  // Watch .js files.
+  gulp.watch('_assets/js/**/*.js', ['build:scripts:watch']);
 
-gulp.task( 'rebuild', [ 'build' ], reload );
-gulp.task( 'watch', [ 'build' ], watch );
-gulp.task( 'default', [ 'watch' ] );
+  // Watch image files; changes are piped to browserSync.
+  gulp.watch('_uploads/**/*', ['build:images']);
+
+  // Watch posts.
+  gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
+
+  // Watch html and markdown files.
+  gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], ['build:jekyll:watch']);
+
+  // Watch RSS feed XML file.
+  gulp.watch('feed.xml', ['build:jekyll:watch']);
+
+  // Watch data files.
+  gulp.watch('_data/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
+
+  // Watch favicon.png.
+  gulp.watch('favicon.png', ['build:jekyll:watch']);
+});
+
+gulp.task( 'default', [ 'serve' ] );
