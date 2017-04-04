@@ -1,7 +1,6 @@
 ---
 title: 27 year old female
 date: 2017-04-03 22:31:00 -04:00
-permalink: "/slides/27-year-old-female"
 links:
 - link_text: Amniocentesis
   slide: Amniocentesis
