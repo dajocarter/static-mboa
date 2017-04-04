@@ -1,0 +1,9 @@
+<div class="grid grid--container">
+  <div class="row row--sm-center">
+  {% for link in include.links %}
+    <div class="col col--sm col--sm-flex text--sm-center">
+      <a href="/slides/{{ link.slide }}" class="link btn btn-primary">{{ link.link_text }}</a>
+    </div>
+  {% endfor %}
+  </div>
+</div>
