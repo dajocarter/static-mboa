@@ -24,10 +24,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width: 800px;
+$content-width: 992px;
 
-$on-palm: 600px;
-$on-laptop: 800px;
+$on-palm: 544px;
+$on-laptop: 992px;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
