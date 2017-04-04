@@ -163,3 +163,39 @@ pre {
     fill: $grey-color;
   }
 }
+
+// Buttons
+
+%button {
+  border: 2px solid $grey-color;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  transition-property: background-color, color;
+
+  &:hover, &:focus {
+    background-color: $grey-color;
+  }
+}
+
+button {
+  @extend %button;
+
+  &:hover, &:focus {
+    a {
+      color: $background-color;
+    }
+  }
+}
+
+.btn {
+  @extend %button;
+
+  &:hover, &:focus {
+    color: $background-color;
+  }
+}
