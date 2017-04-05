@@ -4,7 +4,7 @@ date: 2017-04-05 01:17:00 -04:00
 position: 6
 links:
 - link_text: Proceed to MRI Machine
-  slide: MRI
+  slide: MRI Final Answer
 checkboxes:
   instructions_text: Great! MRI has several advantages, including which of the following?
     (check all that apply)
