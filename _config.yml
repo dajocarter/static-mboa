@@ -8,6 +8,7 @@ collections:
   slides:
     title: Slides
     output: true
+    permalink: "/slides/:position"
   uploads:
     title: Uploads
     output: true
