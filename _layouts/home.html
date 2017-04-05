@@ -9,11 +9,11 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for case in page.cases %}
+    {% for case in site.cases %}
       <li>
         <h2>
           {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
-          <a class="post-link" href="{{ intro_slide.url | relative_url }}">{{ case.case_title }}</a>
+          <a class="post-link" href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
         </h2>
       </li>
     {% endfor %}

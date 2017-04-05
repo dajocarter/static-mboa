@@ -30,9 +30,12 @@ defaults:
     layout: slide
     permalink: "/slides/:title/"
     links:
-    - link_text: 
-      slide: 
+    - link_text:
+      slide:
 permalink: pretty
+cases:
+- title: A Curious Cardiovascular Case
+  slide: Intro
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
