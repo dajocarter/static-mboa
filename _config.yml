@@ -28,10 +28,9 @@ defaults:
     type: slides
   values:
     layout: slide
-    permalink: "/slides/:title/"
     links:
-    - link_text: 
-      slide: 
+    - link_text:
+      slide:
 permalink: pretty
 cases:
 - title: A Curious Cardiovascular Case
