@@ -4,9 +4,9 @@ date: 2017-04-05 00:57:00 -04:00
 position: 4
 links:
 - link_text: Magnetic resonance imaging (MRI)
-  slide: Amniocentesis
+  slide: MRI
 - link_text: Ultrasound (US)
-  slide: Amniocentesis
+  slide: Ultrasound
 ---
 
 B) Anterior abdominal wall → perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
