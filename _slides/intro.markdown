@@ -6,6 +6,6 @@ links:
   slide: 27 year old female
 ---
 
-You are a successful obstetrician with a busy schedule today. Go check in with your first patient in Exam Room 1.
+*You are a successful obstetrician with a busy schedule today. Go check in with your first patient in Exam Room 1.*
 
 ![Exam-Room-doors.png](/uploads/Exam-Room-doors.png)
