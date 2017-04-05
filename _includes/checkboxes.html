@@ -1,0 +1,20 @@
+<div class="grid grid--container">
+  {% if include.content %}
+  <div class="row row--sm-center">
+    <div class="col col--sm text--sm-center">
+      {{ include.content }}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="row row--sm-center">
+    <div class="col col--sm text--sm-center">
+    {% for option in include.options %}
+      <div class="checkbox">
+        <label for="input-{{ forloop.index }}">
+          <input type="checkbox" id="input-{{ forloop.index }}" name="checkbox-group" value="{{ option.is_correct }}">{{ option.option_text }}</label>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

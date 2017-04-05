@@ -1,8 +1,5 @@
 jQuery(document).ready(function($) {
-  $( '.slick' ).slick({
-    'adaptiveHeight': true,
-    'autoplay': true,
-    'autoplaySpeed': 2000,
-    'dots': true
+  $('input[type="checkbox"], input[type="radio"]').on('change', function() {
+    ( $(this).val() === 'true' ) ? $(this).parents('[class^="checkbox"], [class^="radio"]').toggleClass('correct') : $(this).parents('[class^="checkbox"], [class^="radio"]').toggleClass('false');
   });
 });

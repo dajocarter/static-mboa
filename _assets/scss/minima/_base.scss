@@ -208,3 +208,36 @@ button {
     color: $background-color;
   }
 }
+
+// Form elements
+div.checkbox,
+div.radio {
+  border-radius: 4px;
+  padding: 5px;
+
+  &.correct {
+    background-color: green;
+  }
+
+  &.false {
+    background-color: red;
+  }
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    max-width: 100%;
+    min-height: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  margin: 6px 0 0 -20px;
+  line-height: normal;
+}

@@ -14,6 +14,10 @@ layout: default
     </div>
     {% endif %}
 
+    {% if page.checkboxes %}
+      {% include checkboxes.html content=page.checkboxes.instructions_text options=page.checkboxes.options %}
+    {% endif %}
+
     {% if page.links %}
       {% include links.html links=page.links %}
     {% endif %}
