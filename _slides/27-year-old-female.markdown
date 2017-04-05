@@ -6,7 +6,7 @@ links:
 - link_text: Amniocentesis
   slide: Amniocentesis
 - link_text: Magnetic resonance imaging (MRI)
-  slide: 27 year old female
+  slide: MRI
 - link_text: Ultrasound (US)
   slide: 27 year old female
 ---
