@@ -75,10 +75,6 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
     color: $text-color;
     text-decoration: underline;
@@ -185,14 +181,18 @@ pre {
 button {
   @extend %button;
 
+  background-color: $background-color;
+  font-size: $base-font-size;
+
   &:hover, &:focus {
     a {
       color: $background-color;
+      text-decoration: underline;
     }
   }
 }
 
-.btn {
+.button {
   @extend %button;
 
   &:hover, &:focus {
