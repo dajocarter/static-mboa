@@ -1,0 +1,34 @@
+{%for label in include.labels %}
+
+<div class="grid grid--container">
+  {% if label.label_description %}
+  <div class="row row--sm-center">
+    <div class="col col--sm text--sm-center">
+      {{ label.label_description }}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if label.label_image %}
+  <div class="row row--sm-center">
+    <div class="col col--sm text--sm-center">
+      <img src="{{ label.label_image }}" alt="" />
+    </div>
+  </div>
+  {% endif %}
+
+  {% if label.options %}
+  <div class="row row--sm-center">
+    {% for option in label.options %}
+    <div class="col col--sm text--sm-center form-group">
+      <label for="input-{{ forloop.index }}">{{ option.label_text | markdownify }}</label>
+      <div class="input-group">
+        <input id="input-{{ forloop.index }}" type="text" class="form-control answer-check">
+        <span class="input-group-addon"><i class="fa fa-chack-circle-o"></i></span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+{% endfor %}

@@ -7,6 +7,7 @@
   </div>
   {% endif %}
 
+  {% if include.options %}
   <div class="row row--sm-center">
     <div class="col col--sm text--sm-center">
     {% for option in include.options %}
@@ -17,4 +18,6 @@
     {% endfor %}
     </div>
   </div>
+  {% endif %}
+
 </div>

@@ -18,6 +18,10 @@ layout: default
       {% include checkboxes.html content=page.checkboxes.instructions_text options=page.checkboxes.options %}
     {% endif %}
 
+    {% if page.labels %}
+      {% include labeling.html labels=page.labels %}
+    {% endif %}
+
     {% if page.links %}
       {% include links.html links=page.links %}
     {% endif %}
