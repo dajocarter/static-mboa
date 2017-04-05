@@ -6,7 +6,7 @@ links:
 - link_text: Amniocentesis
   slide: Amniocentesis
 - link_text: Ultrasound (US)
-  slide: MRI
+  slide: Ultrasound
 ---
 
 Sorry! The insurance company denies your request for an MRI due to the expense. Which assessment do you choose next?
