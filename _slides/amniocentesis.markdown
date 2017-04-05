@@ -14,12 +14,12 @@ You begin to prepare the needle and syringe for the procedure. Which of the foll
 
  
 
-A) Vagina → cervix → amniochorionic membrane → amniotic fluid
+**A)** Vagina → cervix → amniochorionic membrane → amniotic fluid
 
  
 
-B) Anterior abdominal wall → perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
+**B)** Anterior abdominal wall → perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
 
  
 
-C) Anterior abdominal wall → perimetrium → endometrium → myometrium → amniochorionic membrane → amniotic fluid
+**C)** Anterior abdominal wall → perimetrium → endometrium → myometrium → amniochorionic membrane → amniotic fluid
