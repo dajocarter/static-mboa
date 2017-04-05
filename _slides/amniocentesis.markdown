@@ -6,9 +6,9 @@ links:
 - link_text: A
   slide: 'Amniocentesis Wrong Answer #1'
 - link_text: B
-  slide: Amniocentesis
+  slide: 'Amniocentesis Correct Answer #2'
 - link_text: C
-  slide: Amniocentesis
+  slide: 'Amniocentesis Wrong Answer #3'
 ---
 
 You begin to prepare the needle and syringe for the procedure. Which of the following is the correct order of structures you must pierce to reach the amniotic fluid for a transabdominal amniocentesis?
