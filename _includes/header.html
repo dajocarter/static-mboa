@@ -19,6 +19,11 @@
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+
+        {% for case in site.cases %}
+          {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
+          <a class="page-link" href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
+        {% endfor %}
       </div>
     </nav>
 
