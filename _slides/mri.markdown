@@ -1,6 +1,9 @@
 ---
 title: MRI
 date: 2017-04-05 01:17:00 -04:00
+links:
+- link_text: Proceed to MRI Machine
+  slide: MRI
 checkboxes:
   instructions_text: Great! MRI has several advantages, including which of the following?
     (check all that apply)
@@ -13,7 +16,5 @@ checkboxes:
     is_correct: false
   - option_text: It can be used in many patients, except those with metal implants
     is_correct: true
-links:
-- link_text: Proceed to MRI Machine
 ---
 
