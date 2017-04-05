@@ -3,7 +3,7 @@
   {% for link in include.links %}
     <div class="col col--sm col--sm-flex text--sm-center">
       {% assign related_slide = site.slides | where: 'title', link.slide | first %}
-      <a href="{{ related_slide.url }}" class="link btn btn-primary">{{ link.link_text }}</a>
+      <a href="{{ related_slide.url | relative_url }}" class="link btn btn-primary">{{ link.link_text }}</a>
     </div>
   {% endfor %}
   </div>
