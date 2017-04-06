@@ -79,6 +79,7 @@ gulp.task( 'build:styles', () =>
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
     } ) )
+    .pipe( $.sourcemaps.write() )
     .pipe( $.postcss( [
       autoprefixer( ),
       mqpacker( { 'sort': true } ),
@@ -88,7 +89,6 @@ gulp.task( 'build:styles', () =>
       'basename': 'project',
       'suffix': '.min'
     } ) )
-    .pipe( $.sourcemaps.write() )
     .pipe( gulp.dest( 'assets/css' ) )
     .pipe( gulp.dest( '_site/assets/css' ) )
     .pipe( browserSync.stream() )
@@ -142,9 +142,9 @@ gulp.task( 'build:scripts', () =>
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.sourcemaps.init() )
     .pipe( $.concat( 'project.js' ) )
+    .pipe( $.sourcemaps.write( ) )
     .pipe( $.rename( { 'suffix': '.min' } ) )
     .pipe( $.uglify( { 'mangle': false } ) )
-    .pipe( $.sourcemaps.write( ) )
     .pipe( gulp.dest( 'assets/js' ) )
     .pipe( gulp.dest( '_site/assets/js' ) )
     .pipe( browserSync.stream() )
