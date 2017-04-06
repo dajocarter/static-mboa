@@ -135,8 +135,23 @@ gulp.task( 'clean:images', ( callback ) => {
  */
 gulp.task( 'build:scripts', () =>
   gulp.src( [
-    'node_modules/jquery/dist/jquery.js',
     // Add all npm packages first
+    'node_modules/jquery-slim/dist/jquery.slim.js',
+    'node_modules/tether/dist/js/tether.js',
+    // Load all bootstrap modules, or
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    // Turn off/on bootstrap modules as needed
+    // 'node_modules/bootstrap/js/alert.js',
+    // 'node_modules/bootstrap/js/button.js',
+    // 'node_modules/bootstrap/js/carousel.js',
+    // 'node_modules/bootstrap/js/collapse.js',
+    // 'node_modules/bootstrap/js/dropdown.js',
+    // 'node_modules/bootstrap/js/modal.js',
+    // 'node_modules/bootstrap/js/popover.js',
+    // 'node_modules/bootstrap/js/scrollspy.js',
+    // 'node_modules/bootstrap/js/tab.js',
+    // 'node_modules/bootstrap/js/tooltip.js',
+    // 'node_modules/bootstrap/js/util.js',
     '_assets/js/**/*.js'
   ] )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
