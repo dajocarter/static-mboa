@@ -74,6 +74,7 @@ gulp.task( 'build:styles', () =>
         // Include paths here to use @import without paths
         'node_modules/normalize.css/',
         'node_modules/slick-carousel/slick/',
+        'node_modules/bootstrap/scss/'
       ],
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
