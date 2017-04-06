@@ -74,7 +74,6 @@ gulp.task( 'build:styles', () =>
         // Include paths here to use @import without paths
         'node_modules/normalize.css/',
         'node_modules/slick-carousel/slick/',
-        'node_modules/flexbox-grid-sass/dist/'
       ],
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
@@ -136,7 +135,6 @@ gulp.task( 'clean:images', ( callback ) => {
 gulp.task( 'build:scripts', () =>
   gulp.src( [
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js',
     // Add all npm packages first
     '_assets/js/**/*.js'
   ] )
