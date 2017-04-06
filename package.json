@@ -43,10 +43,9 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-sass": "^3.3.7",
     "jquery": "^3.2.1",
     "jquery-slim": "^3.0.0",
-    "normalize.css": "^6.0.0",
-    "tether": "^1.4.0"
+    "normalize.css": "^6.0.0"
   }
 }
