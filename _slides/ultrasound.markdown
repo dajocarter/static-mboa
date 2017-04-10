@@ -1,7 +1,7 @@
 ---
 title: Ultrasound
 date: 2017-04-05 11:28:00 -04:00
-position: 28
+position: 26
 links:
 - link_text: Genetic Factors
   slide: wrong-etiology

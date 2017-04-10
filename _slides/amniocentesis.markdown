@@ -1,7 +1,7 @@
 ---
 title: Amniocentesis
 date: 2017-04-03 22:35:00 -04:00
-position: 22
+position: 21
 links:
 - link_text: A
   slide: 'Amniocentesis Wrong Answer #1'

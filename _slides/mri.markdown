@@ -1,7 +1,7 @@
 ---
 title: MRI
 date: 2017-04-05 01:17:00 -04:00
-position: 26
+position: 24
 links:
 - link_text: Proceed to MRI Machine
   slide: MRI Final Answer
