@@ -1,7 +1,7 @@
 ---
 title: Correct Etiology
 date: 2017-04-09 22:57:00 -04:00
-position: 11
+position: 10
 links:
 - link_text: Foramen secundum defect
   slide: correct-etiology
