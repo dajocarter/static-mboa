@@ -2,16 +2,12 @@
 layout: default
 ---
 
-<article class="post">
+<article class="slide">
 
-  <div class="post-content grid grid-container">
+  <div class="container">
 
     {% if content %}
-    <div class="row">
-      <div class="col col--sm">
-        {{ content }}
-      </div>
-    </div>
+      {{ content }}
     {% endif %}
 
     {% if page.checkboxes %}

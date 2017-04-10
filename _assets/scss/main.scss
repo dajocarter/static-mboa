@@ -3,3 +3,149 @@
 // Import vendors
 @import "bootstrap-custom";
 @import "font-awesome-custom";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-size: 16px;
+
+  // Padding top by header height
+  padding-top: 71px;
+
+  // Margin bottom by footer height
+  margin-bottom: 220px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 291px);
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+a.btn {
+  display: block;
+  margin: 1rem auto;
+  max-width: 460px;
+  white-space: normal;
+  width: 100%;
+}
+
+.case-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: $navbar-default-bg;
+  bottom: 0;
+  color: $navbar-default-brand-color;
+  height: 220px;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+
+  .row {
+    clear: left;
+  }
+
+  .navbar-brand {
+    color: $text-color;
+    padding-left: 0;
+  }
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.slide {
+  flex: 0 0 auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.input-group {
+  i.fa-question-circle-o {
+    cursor: pointer;
+  }
+
+  &.correct {
+    input[type="text"] {
+      border-color: #3e8f3e;
+    }
+
+    .input-group-addon {
+      background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+      background-repeat: repeat-x;
+      border-color: #3e8f3e;
+
+      .fa-check-circle-o {
+        display: inline-block;
+        color: #fff;
+      }
+
+      a {
+        display: none;
+      }
+    }
+  }
+
+  &.false {
+    .input-group-addon {
+      .fa-check-circle-o {
+        display: none;
+      }
+
+      a {
+        display: inline;
+      }
+    }
+  }
+}
+
+.checkbox,
+.radio {
+  padding: 5px;
+  border-radius: 4px;
+
+  &.correct {
+    background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #3e8f3e;
+    color: #fff;
+  }
+
+  &.false {
+    background-image: linear-gradient(to bottom, #d9534f 0, #c12e2a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #b92c28;
+    color: #fff;
+  }
+}

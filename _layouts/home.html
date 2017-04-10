@@ -2,21 +2,25 @@
 layout: default
 ---
 
-<div class="home">
+<article class="home">
 
-  <h1 class="page-heading">Choose a Case to Begin</h1>
+  <div class="container">
 
-  {{ content }}
+    <div class="page-header"><h1>Choose a Case to Begin</h1></div>
 
-  <ul class="post-list">
-    {% for case in site.cases %}
-      <li>
-        <h2>
-          {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
-          <a class="post-link" href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {{ content }}
 
-</div>
+    <ul class="case-list">
+      {% for case in site.cases %}
+        <li>
+          <h2>
+            {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
+            <a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</article>

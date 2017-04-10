@@ -1,31 +1,29 @@
-<footer class="site-footer">
+<footer>
 
-  <div class="wrapper">
+    <div class="container">
 
-    <div class="grid grid--container">
+      <h2 class="navbar-brand">My Brain on Anatomy</h2>
 
-      <h2 class="footer-heading">My Brain on Anatomy</h2>
+      <div class="row">
 
-      <div class="row row--sm-top footer-col-wrapper">
+        <div class="col-xs-12 col-sm-4">
 
-        <div class="col col--sm col--footer-contact">
           <ul class="contact-list">
             <li>Barbie Klein</li>
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
           </ul>
+
         </div>
 
-        <div class="col col--sm col--footer-descrip">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-2">
           <p>{{ site.description | escape }}</p>
         </div>
 
       </div>
 
     </div>
-
-  </div>
 
 </footer>
 
