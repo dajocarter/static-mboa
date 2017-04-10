@@ -4,11 +4,11 @@ date: 2017-04-10 00:33:00 -04:00
 position: 12
 links:
 - link_text: Rush to surgery
-  slide: 
+  slide: Surgery
 - link_text: Prescribe medications
-  slide: 
+  slide: ASD Medications
 - link_text: Schedule periodic check-ups
-  slide: 
+  slide: Wait and See
 ---
 
 Nice work! Notice the specific locations for ASDs:
