@@ -7,6 +7,4 @@ links:
   slide: Exam Room 2
 ---
 
-Are you sure? Review the anatomy of the heart and try again.
-
-![Normal-heart-anatomy.jpg](/uploads/Normal-heart-anatomy.jpg)
+Hmm...review the definitions for stenosis and atresia and try again.
