@@ -2,8 +2,17 @@
 title: correct-etiology
 date: 2017-04-09 22:57:00 -04:00
 position: 10
+links:
+- link_text: Foramen secundum defect
+  slide: correct-etiology
+- link_text: Foramen primum defect
+  slide: correct-etiology
+- link_text: Sinus venosus defect
+  slide: correct-etiology
+- link_text: Common atrium
+  slide: correct-etiology
 labels:
-  label_description: |-
+- label_description: |-
     Atrial septal defects (ASDs) are relatively common anomalies, occurring in approximately 10% of cardiac defects.
 
     Label the following structures involved in ASDs.
@@ -13,22 +22,6 @@ labels:
     answers:
     - septum secundum
     hint_text: The second partition to form
-  - label_text: 
-    answers:
-    - 
-    hint_text: 
-  - label_text: 
-    answers:
-    - 
-    hint_text: 
-  - label_text: 
-    answers:
-    - 
-    hint_text: 
-  - '2': 
-    label_text: 
-    answers:
-    - 
 additional_text: |-
   List the steps of atrial septation, starting from the septum primum and ending with foramen ovale.
 
@@ -53,15 +46,6 @@ additional_text: |-
   ![ASD-locations.jpg](/uploads/ASD-locations.jpg)
 
   After reviewing the ultrasound image again, you determine that although a septum has formed, a  defect has developed in the middle of the interatrial septum. Which type of ASD do you suspect?
-links:
-- link_text: Foramen secundum defect
-  slide: correct-etiology
-- link_text: Foramen primum defect
-  slide: correct-etiology
-- link_text: Sinus venosus defect
-  slide: correct-etiology
-- link_text: Common atrium
-  slide: correct-etiology
 ---
 
 Correct! Most CHDs are multifactorial, having both genetic and environmental factors.
