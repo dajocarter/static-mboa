@@ -1,7 +1,7 @@
 ---
 title: 'Amniocentesis Correct Answer #2'
 date: 2017-04-05 00:57:00 -04:00
-position: 6
+position: 5
 links:
 - link_text: Magnetic resonance imaging (MRI)
   slide: MRI

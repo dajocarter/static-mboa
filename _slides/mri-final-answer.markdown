@@ -1,7 +1,7 @@
 ---
 title: MRI Final Answer
 date: 2017-04-05 11:26:00 -04:00
-position: 9
+position: 8
 links:
 - link_text: Amniocentesis
   slide: Amniocentesis
