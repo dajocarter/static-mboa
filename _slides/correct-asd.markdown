@@ -1,7 +1,7 @@
 ---
 title: Correct ASD
 date: 2017-04-10 00:33:00 -04:00
-position: 23
+position: 21
 links:
 - link_text: Rush to surgery
   slide: Surgery
