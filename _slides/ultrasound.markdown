@@ -4,13 +4,13 @@ date: 2017-04-05 11:28:00 -04:00
 position: 8
 links:
 - link_text: Genetic Factors
-  slide: Ultrasound
+  slide: wrong-etiology
 - link_text: Environmental Factors
-  slide: Ultrasound
+  slide: wrong-etiology
 - link_text: Multifactorial
-  slide: Ultrasound
+  slide: correct-etiology
 - link_text: Idiopathic
-  slide: Ultrasound
+  slide: wrong-etiology
 labels:
 - label_description: Great! You begin scanning and generate a four-chamber view of
     the fetal heart. Label the chambers.
