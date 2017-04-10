@@ -18,6 +18,10 @@ layout: default
       {% include labeling.html labels=page.labels %}
     {% endif %}
 
+    {% if page.additional_text %}
+      {{ page.additional_text | markdownify }}
+    {% endif %}
+
     {% if page.links %}
       {% include links.html links=page.links %}
     {% endif %}
