@@ -1,5 +1,5 @@
 ---
-title: My Brain on Embryology
+title: My Brain on Histology
 timezone: America/Indiana/Indianapolis
 collections:
   posts:
@@ -30,11 +30,11 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text: 
-      slide: 
+    - link_text:
+      slide:
 permalink: pretty
 cases:
-- title: A Curious Cardiovascular Case
+- title: A Mysterious Mass
   slide: Intro
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
