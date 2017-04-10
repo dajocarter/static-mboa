@@ -34,7 +34,8 @@ function handleErrors () {
  */
 gulp.task( 'build:fonts', () =>
   gulp.src([
-      'node_modules/bootstrap/dist/fonts/*'
+      'node_modules/bootstrap/dist/fonts/*',
+      'node_modules/font-awesome/fonts/*'
     ])
     .pipe(gulp.dest('assets/fonts'))
     .pipe(gulp.dest('_site/assets/fonts'))
@@ -64,7 +65,8 @@ gulp.task( 'build:styles', () =>
     .pipe( $.sass( {
       'includePaths': [
         // Include paths here to use @import without paths
-        'node_modules/bootstrap-sass/assets/stylesheets/'
+        'node_modules/bootstrap-sass/assets/stylesheets/',
+        'node_modules/font-awesome/scss/'
       ],
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
