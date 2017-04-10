@@ -22,6 +22,26 @@ labels:
     answers:
     - septum secundum
     hint_text: The second partition to form
+  - label_text: "**B)**"
+    answers:
+    - foramen ovale
+    hint_text: A hole found within the second partition
+  - label_text: "**C)**"
+    answers:
+    - foramen secundum
+    hint_text: A hole formed by apoptosis in the cranial part of the first partition
+  - label_text: "**D)**"
+    answers:
+    - septum primum
+    - valve of foramen ovale
+    - foramen ovale valve
+    hint_text: The first partition to form
+  - label_text: "**E)**"
+    answers:
+    - endocardial cushion
+    - endocardial cushions
+    - fused endocardial cushions
+    hint_text: Masses of tissue that grow into the atrioventricular (AV) canal
 additional_text: |-
   List the steps of atrial septation, starting from the septum primum and ending with foramen ovale.
 
