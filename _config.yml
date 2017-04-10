@@ -1,10 +1,14 @@
 ---
-title: My Brain on Histology
+title: My Brain on Embryology
 timezone: America/Indiana/Indianapolis
 collections:
   posts:
     title: Posts
     output: true
+  slides:
+    title: Slides
+    output: true
+    permalink: "/slides/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
@@ -20,13 +24,21 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: slides
+  values:
+    layout: slide
+    links:
+    - link_text: 
+      slide: 
 permalink: pretty
-email: your-email@domain.com
-description: ''
-baseurl: ''
-url: ''
-twitter_username: jekyllrb
-github_username: jekyll
+cases:
+- title: A Curious Cardiovascular Case
+  slide: Intro
+email: barbieaklein@gmail.com
+description: My Brain on Anatomy contains interactive flipped classes for embryology
+  and histology developed by Barbie Klein.
 markdown: kramdown
 gems:
 - jekyll-feed

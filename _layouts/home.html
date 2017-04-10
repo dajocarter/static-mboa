@@ -2,24 +2,25 @@
 layout: default
 ---
 
-<div class="home">
+<article class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <div class="container">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="page-header"><h1>Choose a Case to Begin</h1></div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {{ content }}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <ul class="case-list">
+      {% for case in site.cases %}
+        <li>
+          <h2>
+            {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
+            <a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
 
-</div>
+  </div>
+
+</article>

@@ -1,0 +1,14 @@
+{% if include.content %}
+    {{ include.content }}
+{% endif %}
+
+{% if include.options %}
+<div class="checkboxes">
+  {% for option in include.options %}
+  <div class="checkbox">
+    <label for="input-{{ forloop.index }}">
+      <input type="checkbox" id="input-{{ forloop.index }}" name="checkbox-group" value="{{ option.is_correct }}">{{ option.option_text }}</label>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

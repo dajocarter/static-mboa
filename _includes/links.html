@@ -1,0 +1,60 @@
+{% if include.links %}
+<div class="row">
+
+  {% for link in include.links %}
+
+    {% case include.links.size %}
+      {% when 12 %}
+        {% assign class = "col-sm-6" %}
+
+      {% when 11 %}
+        {% case forloop.index %}
+          {% when 10 or 11 %}
+            {% assign class = "col-sm-6" %}
+
+          {% else %}
+            {% assign class = "col-sm-4" %}
+        {% endcase %}
+
+      {% when 10 %}
+        {% assign class = "col-sm-6" %}
+
+      {% when 9 %}
+        {% assign class = "col-sm-4" %}
+
+      {% when 8 %}
+        {% assign class = "col-sm-3" %}
+
+      {% when 7 %}
+        {% case forloop.index %}
+          {% when 1 or 2 or 3 or 4 %}
+            {% assign class = "col-sm-3" %}
+
+          {% when 5 or 6 or 7 %}
+            {% assign class = "col-sm-4" %}
+        {% endcase %}
+
+      {% when 6 %}
+        {% assign class = "col-sm-4" %}
+
+      {% when 5 %}
+        {% case forloop.index %}
+          {% when 1 or 2 or 3 %}
+            {% assign class = "col-sm-4" %}
+
+          {% when 4 or 5 %}
+            {% assign class = "col-sm-6" %}
+        {% endcase %}
+
+      {% else %}
+        {% assign col_size = 12 | divided_by: include.links.size %}
+        {% assign class = "col-sm-" | append: col_size %}
+      {% endcase %}
+
+  <div class="col-xs-12 {{ class }}">
+    {% assign related_slide = site.slides | where: 'title', link.slide | first %}
+    <a class="btn btn-primary" href="{{ related_slide.url | relative_url }}">{{ link.link_text }}</a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
