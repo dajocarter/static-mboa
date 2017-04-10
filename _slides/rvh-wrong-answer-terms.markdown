@@ -1,6 +1,6 @@
 ---
 title: RVH wrong answer (terms)
-date: 2017-04-10 00:51:00 -04:00
+date: 2017-04-10 00:51:30 -04:00
 position: 23
 links:
 - link_text: Go Back
