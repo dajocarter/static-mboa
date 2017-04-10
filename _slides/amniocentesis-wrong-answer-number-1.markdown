@@ -1,7 +1,7 @@
 ---
 title: 'Amniocentesis Wrong Answer #1'
 date: 2017-04-05 00:40:00 -04:00
-position: 9
+position: 7
 links:
 - link_text: Go Back
   slide: Amniocentesis

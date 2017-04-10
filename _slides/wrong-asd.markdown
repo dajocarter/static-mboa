@@ -1,7 +1,7 @@
 ---
 title: Wrong ASD
 date: 2017-04-10 00:33:00 -04:00
-position: 17
+position: 15
 links:
 - link_text: Go Back
   slide: Correct Etiology
