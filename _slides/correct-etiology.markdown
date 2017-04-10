@@ -4,13 +4,13 @@ date: 2017-04-09 22:57:00 -04:00
 position: 10
 links:
 - link_text: Foramen secundum defect
-  slide: correct-etiology
+  slide: Correct ASD
 - link_text: Foramen primum defect
-  slide: correct-etiology
+  slide: Wrong ASD
 - link_text: Sinus venosus defect
-  slide: correct-etiology
+  slide: Wrong ASD
 - link_text: Common atrium
-  slide: correct-etiology
+  slide: Wrong ASD
 labels:
 - label_description: |-
     Atrial septal defects (ASDs) are relatively common anomalies, occurring in approximately 10% of cardiac defects.
