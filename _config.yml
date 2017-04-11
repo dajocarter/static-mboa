@@ -34,11 +34,11 @@ defaults:
       slide: 
 permalink: pretty
 cases:
-- - case_title: A Mysterious Mass
+- - title: A Mysterious Mass
     slide: Intro
-  - case_title: The Suspicious Lesion
+  - title: The Suspicious Lesion
     slide: Intro
-  - case_title: A Night in the E.R.
+  - title: A Night in the E.R.
     slide: Intro
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
