@@ -53,3 +53,4 @@ exclude:
 - node_modules/
 - package.json
 - gulpfile.js
+pre-flip_assignment_file: "/uploads/Flipped-Class-Assignment.docx"
