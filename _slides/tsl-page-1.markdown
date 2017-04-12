@@ -5,11 +5,11 @@ categories:
 - the-suspicious-lesion
 links:
 - link_text: Thymus
-  slide: 
+  slide: TSL Page 1
 - link_text: Lymph Node
-  slide: 
+  slide: TSL Page 1
 - link_text: Spleen
-  slide: 
+  slide: TSL Page 1
 ---
 
 A 57-year-old female is evaluated for a mammogram with a suspicious lesion. Symptoms and history include:
