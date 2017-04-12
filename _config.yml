@@ -35,11 +35,7 @@ defaults:
 permalink: pretty
 cases:
 - title: A Mysterious Mass
-  slide: Intro
-- title: The Suspicious Lesion
-  slide: Intro
-- title: A Night in the E.R.
-  slide: Intro
+  a mysterious mass slide: Page 1
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
