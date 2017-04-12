@@ -2,13 +2,13 @@
 title: My Brain on Histology
 timezone: America/Indiana/Indianapolis
 collections:
+  a-mysterious-mass:
+    title: A Mysterious Mass Slides
+    output: true
+    permalink: "/a-mysterious-mass/:hour:minute:second"
   posts:
     title: Posts
     output: true
-  slides:
-    title: Slides
-    output: true
-    permalink: "/slides/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
