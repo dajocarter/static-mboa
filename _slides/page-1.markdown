@@ -1,8 +1,11 @@
 ---
 title: Page 1
 date: 2017-04-11 22:35:00 -04:00
+categories:
+- A Mysterious Mass
 links:
 - link_text: Thyroid
+  slide: 
   a mysterious mass slide: Page 1
 - link_text: Lymph Node
   a mysterious mass slide: Page 1
