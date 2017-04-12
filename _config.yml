@@ -6,9 +6,9 @@ collections:
     title: Posts
     output: true
   slides:
-    title: Slides
+    title: Cases
     output: true
-    permalink: "/:categories/:hour:minute:second"
+    permalink: "/:collection/:path/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
@@ -30,8 +30,8 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text: 
-      slide: 
+    - link_text:
+      slide:
 permalink: pretty
 cases:
 - title: A Mysterious Mass

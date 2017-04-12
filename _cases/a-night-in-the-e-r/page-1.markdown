@@ -1,8 +1,6 @@
 ---
 title: Page 1
-date: 2017-04-11 22:35:00 -04:00
-categories:
-- a-mysterious-mass
+date: 2017-04-11 23:00:00 -04:00
 links:
 - link_text: Thyroid
   slide: Page 1
