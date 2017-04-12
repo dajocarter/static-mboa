@@ -6,20 +6,40 @@ layout: default
 
   <div class="container">
 
-    <div class="page-header"><h1>Choose a Case to Begin</h1></div>
+    <section>
+      <div class="page-header">
+        <h2>Before You Begin</h2>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <a target="_blank" href="{{ site.pre-flip_assignment_file | relative_url }}">Pre-Flip Assignment</a>
+        </div>
+      </div>
+    </section>
 
-    {{ content }}
+    <section>
+      <div class="page-header">
+        <h2>Cases</h2>
+      </div>
+      <ul class="case-list">
+        {% for case in site.cases %}
+          <li>
+            <h2>
+              {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
+              <a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 
-    <ul class="case-list">
-      {% for case in site.cases %}
-        <li>
-          <h2>
-            {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
-            <a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
+    <section>
+      <div class="page-header">
+        <h2>Resources</h2>
+      </div>
+      <p>Learning Objectives</p>
+      <p>References</p>
+    </section>
 
   </div>
 
