@@ -1,0 +1,19 @@
+---
+title: Page 1
+date: 2017-04-11 22:35:00 -04:00
+links:
+- link_text: Thyroid
+  a mysterious mass slide: 
+- link_text: Lymph Node
+  a mysterious mass slide: 
+- link_text: Thymus
+  a mysterious mass slide: 
+- link_text: Parathyroid
+  a mysterious mass slide: 
+---
+
+A 33-year-old male presents with ptosis (drooping eyelid), trouble masticating and swallowing, and notices he feels fatigued quickly. An anterior mediastinal mass, 3.5cm in diameter, was found after a CT scan. Histological analysis after biopsy resulted in the slide below.
+
+![mm-pg1.png](/uploads/mm-pg1.png)
+
+You conclude the mass originated from:
