@@ -35,9 +35,9 @@ defaults:
 permalink: pretty
 cases:
 - title: A Mysterious Mass
-  slide: Page 1
+  slide: AMM Page 1
 - title: The Suspicious Lesion
-  slide: Page 1
+  slide: TSL Page 1
 - title: A Night in the E.R.
   slide: Page 1
 email: barbieaklein@gmail.com
