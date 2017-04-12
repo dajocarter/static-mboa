@@ -2,13 +2,13 @@
 title: My Brain on Histology
 timezone: America/Indiana/Indianapolis
 collections:
-  slides:
-    title: Cases
-    output: true
-    permalink: "/:collection/:path/:hour:minute:second"
   posts:
     title: Posts
     output: true
+  slides:
+    title: Slides
+    output: true
+    permalink: "/:case/:path/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
