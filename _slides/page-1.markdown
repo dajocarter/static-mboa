@@ -5,14 +5,13 @@ categories:
 - A Mysterious Mass
 links:
 - link_text: Thyroid
-  slide: 
-  a mysterious mass slide: Page 1
+  slide: Page 1
 - link_text: Lymph Node
-  a mysterious mass slide: Page 1
+  slide: Page 1
 - link_text: Thymus
-  a mysterious mass slide: Page 1
+  slide: Page 1
 - link_text: Parathyroid
-  a mysterious mass slide: Page 1
+  slide: Page 1
 layout: slide
 ---
 
