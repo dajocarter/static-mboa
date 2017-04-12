@@ -10,6 +10,7 @@ links:
   a mysterious mass slide: Page 1
 - link_text: Parathyroid
   a mysterious mass slide: Page 1
+layout: slide
 ---
 
 A 33-year-old male presents with ptosis (drooping eyelid), trouble masticating and swallowing, and notices he feels fatigued quickly. An anterior mediastinal mass, 3.5cm in diameter, was found after a CT scan. Histological analysis after biopsy resulted in the slide below.
