@@ -12,7 +12,7 @@ labels:
   options:
   - hint_text: One layer of cells; cell shapes are as tall as they are wide; nuclei
       are in-line and round
-  - answers:
+    answers:
     - Simple cuboidal epithelium
     - Simple cuboidal
 ---
