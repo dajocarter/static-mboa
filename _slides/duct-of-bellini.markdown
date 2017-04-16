@@ -1,6 +1,8 @@
 ---
 title: Duct of Bellini
 date: 2017-04-10 00:52:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 28
 links:
 - link_text: Go Back

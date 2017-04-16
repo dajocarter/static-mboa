@@ -1,6 +1,8 @@
 ---
 title: Wait and See
 date: 2017-04-10 00:46:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 15
 links:
 - link_text: Enter Exam Room 2

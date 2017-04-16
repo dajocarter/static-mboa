@@ -1,6 +1,8 @@
 ---
 title: Ductus Arteriosus
 date: 2017-04-10 00:53:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 29
 links:
 - link_text: I

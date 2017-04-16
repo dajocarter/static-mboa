@@ -1,6 +1,8 @@
 ---
 title: MRI
 date: 2017-04-05 01:17:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 6
 links:
 - link_text: Proceed to MRI Machine

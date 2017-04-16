@@ -1,6 +1,8 @@
 ---
 title: K type correct
 date: 2017-04-10 00:50:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 20
 links:
 - link_text: Right ventricular hypoplasia

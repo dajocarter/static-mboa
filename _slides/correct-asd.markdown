@@ -1,6 +1,8 @@
 ---
 title: Correct ASD
 date: 2017-04-10 00:33:33 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 12
 links:
 - link_text: Rush to surgery

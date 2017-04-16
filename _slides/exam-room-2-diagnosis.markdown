@@ -1,6 +1,8 @@
 ---
 title: Exam Room 2 Diagnosis
 date: 2017-04-10 00:52:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 25
 links:
 - link_text: Ductus Venous

@@ -1,6 +1,8 @@
 ---
 title: 27 year old female
 date: 2017-04-03 22:31:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 1
 links:
 - link_text: Amniocentesis

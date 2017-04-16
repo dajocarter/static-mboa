@@ -1,6 +1,8 @@
 ---
 title: Ultrasound
 date: 2017-04-05 11:28:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 8
 links:
 - link_text: Genetic Factors

@@ -1,6 +1,8 @@
 ---
 title: 'Amniocentesis Wrong Answer #3'
 date: 2017-04-05 00:55:20 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 5
 links:
 - link_text: Go Back

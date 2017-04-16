@@ -1,6 +1,8 @@
 ---
 title: Wrong A defect terms (pulmonary stenosis)
 date: 2017-04-10 00:50:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 18
 links:
 - link_text: Go Back

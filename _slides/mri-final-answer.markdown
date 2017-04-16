@@ -1,6 +1,8 @@
 ---
 title: MRI Final Answer
 date: 2017-04-05 11:26:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 7
 links:
 - link_text: Amniocentesis
