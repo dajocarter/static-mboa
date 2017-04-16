@@ -105,4 +105,5 @@ exclude:
 - node_modules/
 - package.json
 - gulpfile.js
+homeurl: "//kayakai.com"
 url: "//kayakai.com"
