@@ -54,6 +54,17 @@ a.btn {
   padding: 0;
 }
 
+.dropdown-menu {
+  > li {
+    &:first-child,
+    &.divider + li {
+      > a {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 footer {
   background-color: $navbar-default-bg;
   bottom: 0;

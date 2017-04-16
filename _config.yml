@@ -33,6 +33,25 @@ defaults:
     - link_text: 
       slide: 
 permalink: pretty
+homepage_sections:
+- section_title: Embryology Cases
+  section_url: "//embryo.kayakai.com"
+  columns:
+  - column_title:
+      text: A Curious Cardiovascular Case
+      url: "//embryo.kayakai.com/slides/175400"
+- section_title: Histology Cases
+  section_url: "//histo.kayakai.com"
+  columns:
+  - column_title:
+      text: A Mysterious Mass
+      url: "//histo.kayakai.com/a-mysterious-mass/093200"
+  - column_title:
+      text: The Suspicious Lesion
+      url: "//histo.kayakai.com/the-suspicious-lesion/171900"
+  - column_title:
+      text: A Night in the E.R.
+      url: "//histo.kayakai.com/a-night-in-the-er/172200"
 cases:
 - title: A Curious Cardiovascular Case
   slide: Intro
