@@ -32,13 +32,13 @@ defaults:
     links:
     - link_text: 
       slide: 
-    additional_text:
+    additional_text: 
     labels:
-    - label_description:
+    - label_description: 
       options:
-      - label_text:
-        answers:
-        hint_text:
+      - label_text: 
+        answers: 
+        hint_text: 
 permalink: pretty
 cases:
 - title: A Mysterious Mass
