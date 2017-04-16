@@ -6,43 +6,114 @@ layout: default
 
   <div class="container">
 
-    <section>
+  {% if site.homepage_sections %}
+    {% for section in site.homepage_sections %}
+    <section class="home--section">
       <div class="page-header">
-        <h2>Embryology Cases</h2>
-      </div>
-      <ul class="case-list">
-        {% for case in site.embryo_cases %}
-          <li>
-            <h2>
-              <a href="{{ case.url }}">{{ case.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+        <h2>
+        {% if section.section_url %}
+          <a href="{{ section.section_url }}">
+        {% endif %}
 
-    <section>
-      <div class="page-header">
-        <h2>Histology Cases</h2>
-      </div>
-      <ul class="case-list">
-        {% for case in site.histo_cases %}
-          <li>
-            <h2>
-              <a href="{{ case.url }}">{{ case.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+          {{ section.section_title }}
 
-    <section>
-      <div class="page-header">
-        <h2>Resources</h2>
+        {% if section.section_url %}
+          </a>
+        {% endif %}
+        </h2>
       </div>
-      <p>Learning Objectives</p>
-      <p>References</p>
+      <div class="row">
+      {% for column in section.columns %}
+
+        {% case section.columns.size %}
+        {% when 12 %}
+          {% assign class = "col-sm-6" %}
+
+        {% when 11 %}
+          {% case forloop.index %}
+            {% when 10 or 11 %}
+              {% assign class = "col-sm-6" %}
+
+            {% else %}
+              {% assign class = "col-sm-4" %}
+          {% endcase %}
+
+        {% when 10 %}
+          {% assign class = "col-sm-6" %}
+
+        {% when 9 %}
+          {% assign class = "col-sm-4" %}
+
+        {% when 8 %}
+          {% assign class = "col-sm-3" %}
+
+        {% when 7 %}
+          {% case forloop.index %}
+            {% when 1 or 2 or 3 or 4 %}
+              {% assign class = "col-sm-3" %}
+
+            {% when 5 or 6 or 7 %}
+              {% assign class = "col-sm-4" %}
+          {% endcase %}
+
+        {% when 6 %}
+          {% assign class = "col-sm-4" %}
+
+        {% when 5 %}
+          {% case forloop.index %}
+            {% when 1 or 2 or 3 %}
+              {% assign class = "col-sm-4" %}
+
+            {% when 4 or 5 %}
+              {% assign class = "col-sm-6" %}
+          {% endcase %}
+
+        {% else %}
+          {% assign col_size = 12 | divided_by: section.columns.size %}
+          {% assign class = "col-sm-" | append: col_size %}
+        {% endcase %}
+
+        <div class="home--column col-xs-12 {{ class }}">
+          {% if column.column_image %}
+            {% if column.column_title.url %}
+            <a href="{{ column.column_title.url }}">
+            {% endif %}
+            <img src="{{ column.column_image }}" alt="{{ column.column_title.text }}">
+            {% if column.column_title.url %}
+            </a>
+            {% endif %}
+          {% endif %}
+
+          {% if column.column_title.url %}
+          <a href="{{ column.column_title.url }}">
+          {% endif %}
+          <h3>{{ column.column_title.text }}</h3>
+          {% if column.column_title.url %}
+          </a>
+          {% endif %}
+
+          {{ column.column_text | markdownify }}
+
+          {% if column.column_button %}
+            {% if column.column_button.url %}
+            <a class="btn btn-primary" href="{{ column.column_button.url }}">
+            {% else %}
+            <button>
+            {% endif %}
+              {{ column.column_button.text }}
+            {% if column.column_button.url %}
+            </a>
+            {% else %}
+            </button>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endfor %}
+      </div>
     </section>
+    {% endfor %}
+
+  {% endif %}
 
   </div>
 
