@@ -37,16 +37,60 @@ defaults:
         - 
         hint_text: 
 permalink: pretty
-embryo_cases:
-- title: A Curious Cardiovascular Case
-  url: "//embryo.kayakai.com/slides/175400"
-histo_cases:
-- title: A Mysterious Mass
-  url: "//histo.kayakai.com/a-mysterious-mass/093200"
-- title: The Suspicious Lesion
-  url: "//histo.kayakai.com/the-suspicious-lesion/171900"
-- title: A Night in the E.R.
-  url: "//histo.kayakai.com/a-night-in-the-er/172200"
+homepage_sections:
+- section_title: Embryology Cases
+  section_url: "//embryo.kayakai.com"
+  columns:
+  - column_image: 
+    column_title:
+      text: A Curious Cardiovascular Case
+      url: "//embryo.kayakai.com/slides/175400"
+    column_text: "*You are a successful obstetrician with a busy schedule today...*"
+    column_button:
+      text: Start the Case
+      url: "//embryo.kayakai.com/slides/175400"
+- section_title: Histology Cases
+  section_url: "//histo.kayakai.com"
+  columns:
+  - column_image: 
+    column_text: "*A 33-year-old male presents with an anterior mediastinal mass...*"
+    column_title:
+      text: A Mysterious Mass
+      url: "//histo.kayakai.com/a-mysterious-mass/093200"
+    column_button:
+      text: Start the Case
+      url: "//histo.kayakai.com/a-mysterious-mass/093200"
+  - column_image: 
+    column_text: A 57-year-old female is evaluated for a mammogram with a suspicious
+      lesion...
+    column_title:
+      text: The Suspicious Lesion
+      url: "//histo.kayakai.com/the-suspicious-lesion/171900"
+    column_button:
+      text: Start the Case
+      url: "//histo.kayakai.com/the-suspicious-lesion/171900"
+  - column_image: 
+    column_text: While working in the emergency room one evening, an unconscious 41-year-old
+      male is rushed into the scene...
+    column_title:
+      text: A Night in the E.R.
+      url: "//histo.kayakai.com/a-night-in-the-er/172200"
+    column_button:
+      text: Start the Case
+      url: "//histo.kayakai.com/a-night-in-the-er/172200"
+- section_title: Learn More About the Cases
+  columns:
+  - column_image: 
+    column_text: Watch this [video](https://www.youtube.com/watch?v=iQWvc6qhTds) explaining
+      what a flipped class is, and then check out this [infographic](https://www.knewton.com/wp-content/uploads/flipped-classroom-1.jpg)
+      to learn more about flipped classes.
+    column_title:
+      text: What is a Flipped Class?
+  - column_image: 
+    column_text: Download the HAPS 2015 Workshop Presentation as a .pptx file, a .ppt
+      file, or a .pdf file. Also available for download is my AAA 2015 poster.
+    column_title:
+      text: Download Links
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
