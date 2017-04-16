@@ -30,16 +30,16 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text:
-      slide:
-    additional_text:
+    - link_text: 
+      slide: 
+    additional_text: 
     labels:
-    - label_description:
+    - label_description: 
       options:
-      - label_text:
+      - label_text: 
         answers:
-        -
-        hint_text:
+        - 
+        hint_text: 
 permalink: pretty
 cases:
 - title: A Mysterious Mass
