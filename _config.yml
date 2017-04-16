@@ -30,8 +30,8 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text: 
-      slide: 
+    - link_text:
+      slide:
     additional_text:
     labels:
     - label_description:
