@@ -3,7 +3,7 @@ title: AMM Parathyroid
 date: 2017-04-15 20:06:00 -04:00
 categories:
 - a-mysterious-mass
-position: 5
+position: 4
 links:
 - link_text: Return to investigate the slide from the mysterious mediastinal mass
   slide: AMM Page 1
