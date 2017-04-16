@@ -49,3 +49,5 @@ exclude:
 - node_modules/
 - package.json
 - gulpfile.js
+homeurl: "//kayakai.com"
+url: "//embryo.kayakai.com"
