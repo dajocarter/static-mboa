@@ -8,11 +8,11 @@ links:
 - link_text: Thyroid
   slide: AMM Thyroid
 - link_text: Lymph Node
-  slide: AMM Page 1
+  slide: AMM Lymph Node
 - link_text: Thymus
-  slide: AMM Page 1
+  slide: AMM Thymus
 - link_text: Parathyroid
-  slide: AMM Page 1
+  slide: AMM Parathyroid
 ---
 
 A 33-year-old male presents with ptosis (drooping eyelid), trouble masticating and swallowing, and notices he feels fatigued quickly. An anterior mediastinal mass, 3.5cm in diameter, was found after a CT scan. Histological analysis after biopsy resulted in the slide below.
