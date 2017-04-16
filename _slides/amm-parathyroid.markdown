@@ -8,7 +8,7 @@ labels:
 - label_description: PTH binds receptors on osteoblasts. What paracrine factor is
     secreted by osteoblasts that stimulate osteoclasts?
   options:
-    answers:
+  - answers:
     - RANK Ligand
     - RANKL
 additional_text: "![MM-Parathyroid2.jpg](/uploads/MM-Parathyroid2.jpg)"
