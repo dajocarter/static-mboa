@@ -38,6 +38,7 @@ defaults:
       options:
       - label_text:
         answers:
+        -
         hint_text:
 permalink: pretty
 cases:
