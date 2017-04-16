@@ -58,6 +58,11 @@ a.btn {
   text-align: center;
 }
 
+.dropdown-menu > li:first-child > a,
+.dropdown-menu > li.divider + li > a {
+  font-weight: bold;
+}
+
 footer {
   background-color: $navbar-default-bg;
   bottom: 0;
