@@ -11,25 +11,29 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     </div>
 
     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 
       <ul class="nav navbar-nav navbar-right">
-
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-          {% endif %}
-        {% endfor %}
-
-        {% for case in site.cases %}
-          {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
-          <li><a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a></li>
-        {% endfor %}
-
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cases <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          {% for section in site.homepage_sections %}
+            {% if section.section_url %}
+            <li><a href="{{ section.section_url }}">{{ section.section_title }}</a></li>
+            {% for column in section.columns %}
+            <li><a href="{{ column.column_title.url }}">{{ column.column_title.text }}</a></li>
+            {% endfor %}
+            {% unless forloop.last %}
+            <li role="separator" class="divider"></li>
+            {% endunless %}
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </li>
       </ul>
 
     </div>
