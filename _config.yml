@@ -5,10 +5,6 @@ collections:
   posts:
     title: Posts
     output: true
-  slides:
-    title: Slides
-    output: true
-    permalink: "/:categories/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
