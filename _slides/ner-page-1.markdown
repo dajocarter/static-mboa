@@ -3,7 +3,7 @@ title: NER Page 1
 date: 2017-04-12 17:22:00 -04:00
 categories:
 - a-night-in-the-er
-position: 5
+position: 6
 links:
 - link_text: A
   slide: 
