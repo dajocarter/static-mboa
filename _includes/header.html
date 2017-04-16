@@ -23,12 +23,14 @@
             <ul class="dropdown-menu">
             {% for section in site.homepage_sections %}
               {% if section.section_url %}
-              <li><a href="{{ section.section_url }}">{{ section.section_title }}</a></li>
-              <li role="separator" class="divider"></li>
-              {% for column in section.columns %}
-              <li><a href="{{ column.column_title.url }}">{{ column.column_title.text }}</a></li>
-              {% endfor %}
-              <li role="separator" class="divider"></li>
+                <li><a href="{{ section.section_url }}">{{ section.section_title }}</a></li>
+                {% for column in section.columns %}
+                  <li><a href="{{ column.column_title.url }}">{{ column.column_title.text }}</a></li>
+                {% endfor %}
+                {% assign last = forloop.length | minus: 1  %}
+                {% unless forloop.index >= last %}
+                  <li role="separator" class="divider"></li>
+                {% endunless %}
               {% endif %}
             {% endfor %}
             </ul>
