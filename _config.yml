@@ -87,8 +87,9 @@ homepage_sections:
     column_title:
       text: What is a Flipped Class?
   - column_image: 
-    column_text: Download the HAPS 2015 Workshop Presentation as a .pptx file, a .ppt
-      file, or a .pdf file. Also available for download is my AAA 2015 poster.
+    column_text: Download the HAPS 2015 Workshop Presentation as a [.pptx file](/uploads/HAPS-2015-Flipped-Histo-Workshop.pptx),
+      a [.ppt file](/uploads/HAPS-2015-Flipped-Histo-Workshop.ppt), or a [.pdf file](/uploads/HAPS-2015-Flipped-Histo-Workshop.pdf).
+      Also available for download is my [AAA 2015 poster](/uploads/AAA-2015-Flipped-Class-Poster.pdf).
     column_title:
       text: Download Links
 email: barbieaklein@gmail.com
