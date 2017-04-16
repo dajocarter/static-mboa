@@ -23,13 +23,13 @@
           <ul class="dropdown-menu">
           {% for section in site.homepage_sections %}
             {% if section.section_url %}
-            <li><a href="{{ section.section_url }}">{{ section.section_title }}</a></li>
-            {% for column in section.columns %}
-            <li><a href="{{ column.column_title.url }}">{{ column.column_title.text }}</a></li>
-            {% endfor %}
-            {% unless forloop.last %}
-            <li role="separator" class="divider"></li>
-            {% endunless %}
+              <li><a href="{{ section.section_url }}">{{ section.section_title }}</a></li>
+              {% for column in section.columns %}
+                <li><a href="{{ column.column_title.url }}">{{ column.column_title.text }}</a></li>
+              {% endfor %}
+              {% unless forloop.last %}
+                <li role="separator" class="divider"></li>
+              {% endunless %}
             {% endif %}
           {% endfor %}
           </ul>
