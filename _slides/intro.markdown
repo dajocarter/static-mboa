@@ -1,6 +1,8 @@
 ---
 title: Intro
 date: 2017-04-03 17:54:00 -04:00
+categories:
+- a-curious-cardiovascular-case
 position: 0
 links:
 - link_text: Enter Exam Room 1
