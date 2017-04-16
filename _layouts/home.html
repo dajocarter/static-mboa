@@ -8,25 +8,28 @@ layout: default
 
     <section>
       <div class="page-header">
-        <h2>Before You Begin</h2>
+        <h2>Embryology Cases</h2>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <a target="_blank" href="{{ site.pre-flip_assignment_file | relative_url }}">Pre-Flip Assignment</a>
-        </div>
-      </div>
+      <ul class="case-list">
+        {% for case in site.embryo_cases %}
+          <li>
+            <h2>
+              <a href="{{ case.url }}">{{ case.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
     </section>
 
     <section>
       <div class="page-header">
-        <h2>Cases</h2>
+        <h2>Histology Cases</h2>
       </div>
       <ul class="case-list">
-        {% for case in site.cases %}
+        {% for case in site.histo_cases %}
           <li>
             <h2>
-              {% assign intro_slide = site.slides | where: 'title', case.slide | first %}
-              <a href="{{ intro_slide.url | relative_url }}">{{ case.title }}</a>
+              <a href="{{ case.url }}">{{ case.title }}</a>
             </h2>
           </li>
         {% endfor %}

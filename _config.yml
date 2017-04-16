@@ -39,14 +39,14 @@ defaults:
 permalink: pretty
 embryo_cases:
 - title: A Curious Cardiovascular Case
-  url: "://embryo.mybrainonanatomy.com"
+  url: "//embryo.kayakai.com/slides/175400"
 histo_cases:
 - title: A Mysterious Mass
-  url: "://histo.mybrainonanatomy.com"
+  url: "//histo.kayakai.com/a-mysterious-mass/093200"
 - title: The Suspicious Lesion
-  url: "://histo.mybrainonanatomy.com"
+  url: "//histo.kayakai.com/the-suspicious-lesion/171900"
 - title: A Night in the E.R.
-  url: "://histo.mybrainonanatomy.com"
+  url: "//histo.kayakai.com/a-night-in-the-er/172200"
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
