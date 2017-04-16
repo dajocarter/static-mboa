@@ -37,13 +37,16 @@ defaults:
         - 
         hint_text: 
 permalink: pretty
-cases:
+embryo_cases:
+- title: A Curious Cardiovascular Case
+  url: "://embryo.mybrainonanatomy.com"
+histo_cases:
 - title: A Mysterious Mass
-  slide: AMM Page 1
+  url: "://histo.mybrainonanatomy.com"
 - title: The Suspicious Lesion
-  slide: TSL Page 1
+  url: "://histo.mybrainonanatomy.com"
 - title: A Night in the E.R.
-  slide: NER Page 1
+  url: "://histo.mybrainonanatomy.com"
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
