@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="slide">
+
+  <div class="container">
+
+    {% if content %}
+      {{ content }}
+    {% endif %}
+
+    {% if page.checkboxes %}
+      {% include checkboxes.html content=page.checkboxes.instructions_text options=page.checkboxes.options %}
+    {% endif %}
+
+    {% if page.labels %}
+      {% include labeling.html labels=page.labels %}
+    {% endif %}
+
+    {% if page.additional_text %}
+      {{ page.additional_text | markdownify }}
+    {% endif %}
+
+    {% if page.links %}
+      {% include links.html links=page.links %}
+    {% endif %}
+
+  </div>
+
+</article>

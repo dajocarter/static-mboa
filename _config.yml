@@ -5,6 +5,10 @@ collections:
   posts:
     title: Posts
     output: true
+  slides:
+    title: Slides
+    output: true
+    permalink: "/:categories/:hour:minute:second"
   uploads:
     title: Uploads
     output: true
@@ -20,13 +24,33 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: slides
+  values:
+    layout: slide
+    links:
+    - link_text:
+      slide:
+    additional_text:
+    labels:
+    - label_description:
+      options:
+      - label_text:
+        answers:
+        -
+        hint_text:
 permalink: pretty
-email: your-email@domain.com
-description: ''
-baseurl: ''
-url: ''
-twitter_username: jekyllrb
-github_username: jekyll
+cases:
+- title: A Mysterious Mass
+  slide: AMM Page 1
+- title: The Suspicious Lesion
+  slide: TSL Page 1
+- title: A Night in the E.R.
+  slide: NER Page 1
+email: barbieaklein@gmail.com
+description: My Brain on Anatomy contains interactive flipped classes for embryology
+  and histology developed by Barbie Klein.
 markdown: kramdown
 gems:
 - jekyll-feed

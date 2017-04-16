@@ -32,21 +32,14 @@ function handleErrors () {
  *
  * https://www.npmjs.com/package/merge-stream
  */
-gulp.task( 'build:fonts', () => {
-  const toAssetsCss = gulp.src([
-      'node_modules/slick-carousel/slick/ajax-loader.gif'
-    ])
-    .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('_site/assets/css'));
-
-  const toAssetsFonts = gulp.src([
-      'node_modules/slick-carousel/slick/fonts/*'
+gulp.task( 'build:fonts', () =>
+  gulp.src([
+      'node_modules/bootstrap/dist/fonts/*',
+      'node_modules/font-awesome/fonts/*'
     ])
     .pipe(gulp.dest('assets/fonts'))
-    .pipe(gulp.dest('_site/assets/fonts'));
-
-  merge(toAssetsCss, toAssetsFonts);
-});
+    .pipe(gulp.dest('_site/assets/fonts'))
+);
 
 gulp.task( 'clean:fonts', ( callback ) => {
   del([
@@ -72,14 +65,24 @@ gulp.task( 'build:styles', () =>
     .pipe( $.sass( {
       'includePaths': [
         // Include paths here to use @import without paths
-        'node_modules/normalize.css/',
-        'node_modules/slick-carousel/slick/'
+        'node_modules/bootstrap-sass/assets/stylesheets/',
+        'node_modules/font-awesome/scss/'
       ],
       'errLogToConsole': true,
       'outputStyle': 'expanded' // Options: nested, expanded, compact, compressed
     } ) )
+    .pipe( $.sourcemaps.write() )
     .pipe( $.postcss( [
-      autoprefixer( ),
+      autoprefixer( { 'browsers': [
+        "Android 2.3",
+        "Android >= 4",
+        "Chrome >= 20",
+        "Firefox >= 24",
+        "Explorer >= 8",
+        "iOS >= 6",
+        "Opera >= 12",
+        "Safari >= 6"
+      ] } ),
       mqpacker( { 'sort': true } ),
       cssnano( { 'safe': true } )
     ] ) )
@@ -87,7 +90,6 @@ gulp.task( 'build:styles', () =>
       'basename': 'project',
       'suffix': '.min'
     } ) )
-    .pipe( $.sourcemaps.write() )
     .pipe( gulp.dest( 'assets/css' ) )
     .pipe( gulp.dest( '_site/assets/css' ) )
     .pipe( browserSync.stream() )
@@ -134,17 +136,31 @@ gulp.task( 'clean:images', ( callback ) => {
  */
 gulp.task( 'build:scripts', () =>
   gulp.src( [
-    'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js',
     // Add all npm packages first
+    'node_modules/jquery-slim/dist/jquery.slim.js',
+    // Load all bootstrap modules, or
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+    // Turn on bootstrap modules as needed
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
     '_assets/js/**/*.js'
   ] )
     .pipe( $.plumber( { 'errorHandler': handleErrors } ) )
     .pipe( $.sourcemaps.init() )
     .pipe( $.concat( 'project.js' ) )
+    .pipe( $.sourcemaps.write( ) )
     .pipe( $.rename( { 'suffix': '.min' } ) )
     .pipe( $.uglify( { 'mangle': false } ) )
-    .pipe( $.sourcemaps.write( ) )
     .pipe( gulp.dest( 'assets/js' ) )
     .pipe( gulp.dest( '_site/assets/js' ) )
     .pipe( browserSync.stream() )
