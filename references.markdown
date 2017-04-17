@@ -4,7 +4,7 @@ date: 2017-04-16 21:02:00 -04:00
 ---
 
 ## A Mysterious Mass
-Mescher, A. __Junqueira’s Basic Histology: Text and Atlas__. 13th ed. New York: McGraw-Hill Medical, 2010.
+Mescher, A. <u>Junqueira’s Basic Histology: Text and Atlas</u>. 13th ed. New York: McGraw-Hill Medical, 2010.
 
 Myasthenia Gravis Foundation of America, Inc. 
 [http://www.myasthenia.org/WhatisMG/FAQs.aspx#sthash.URz4BT3l.dpuf](http://www.myasthenia.org/WhatisMG/FAQs.aspx#sthash.URz4BT3l.dpuf)
