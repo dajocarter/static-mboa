@@ -68,16 +68,17 @@ home_sections:
     column_text: Download the Pre-Flip Assignment before you begin the cases.
     column_button:
       text: Download
-      url:
+      url: 
   - column_title:
       text: Pre-Test
-    column_text: Take the Pre-Test after you've gone through the Pre-Flip Assignment and before you begin the cases.
+    column_text: Take the Pre-Test after you've gone through the Pre-Flip Assignment
+      and before you begin the cases.
     column_button:
       text: Take the Test
-      url:
+      url: 
 - section_title: Cases
   columns:
-  - column_image:
+  - column_image: 
     column_text: "*A 33-year-old male presents with an anterior mediastinal mass...*"
     column_title:
       text: A Mysterious Mass
@@ -85,7 +86,7 @@ home_sections:
     column_button:
       text: Start the Case
       url: "//histo.kayakai.com/a-mysterious-mass/093200"
-  - column_image:
+  - column_image: 
     column_text: A 57-year-old female is evaluated for a mammogram with a suspicious
       lesion...
     column_title:
@@ -94,7 +95,7 @@ home_sections:
     column_button:
       text: Start the Case
       url: "//histo.kayakai.com/the-suspicious-lesion/171900"
-  - column_image:
+  - column_image: 
     column_text: While working in the emergency room one evening, an unconscious 41-year-old
       male is rushed into the scene...
     column_title:
@@ -107,18 +108,18 @@ home_sections:
   columns:
   - column_title:
       text: Learning Objectives
-      url:
+      url: 
     column_text: Learn more about the learning objectives for the above cases.
     column_button:
       text: Learn More
-      url:
+      url: 
   - column_title:
       text: References
-      url:
+      url: 
     column_text: View the references used in the making of the above cases.
     column_button:
       text: References
-      url:
+      url: 
 cases:
 - title: A Mysterious Mass
   slide: AMM Page 1
