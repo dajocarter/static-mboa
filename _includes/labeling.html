@@ -1,7 +1,7 @@
 {%for label in include.labels %}
 
   {% if label.label_description %}
-    {{ label.label_description }}
+    {{ label.label_description | markdownify }}
   {% endif %}
 
   {% if label.label_image %}
