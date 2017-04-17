@@ -8,9 +8,9 @@ links:
 - link_text: Hassall’s corpuscles
   slide: AMM Hassal's Corpuscles
 - link_text: Epithelioreticular cells
-  slide: 
+  slide: AMM Epithelioreticular Cells
 - link_text: Thymocytes
-  slide: 
+  slide: AMM Thymocytes
 additional_text: |-
   ![MM-Pg3.png](/uploads/MM-Pg3.png)
 
