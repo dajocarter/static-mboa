@@ -8,7 +8,9 @@ links:
 - link_text: Reevaluate the thymus classification as a lymphoid organ
   slide: AMM Thymus
 radio_buttons:
-  instructions_text: Remember that secondary lymphoid organs include the spleen, lymph nodes, and MALT. Dense aggregations of MALT can be found in which layer of the gastrointestinal tract?
+  instructions_text: Remember that secondary lymphoid organs include the spleen, lymph
+    nodes, and MALT. Dense aggregations of MALT can be found in which layer of the
+    gastrointestinal tract?
   options:
   - option_text: A) Mucosa and Submucosa
     is_correct: true
