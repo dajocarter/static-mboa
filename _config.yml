@@ -72,11 +72,12 @@ home_sections:
       url: "/uploads/Flipped-Class-Assignment.docx"
   - column_title:
       text: Pre-Test
+      url: "/pre-test/"
     column_text: Take the Pre-Test after you've gone through the Pre-Flip Assignment
       and before you begin the cases.
     column_button:
       text: Take the Test
-      url: 
+      url: "/pre-test/"
 - section_title: Cases
   columns:
   - column_image: 
@@ -109,25 +110,18 @@ home_sections:
   columns:
   - column_title:
       text: Learning Objectives
-      url: 
+      url: "/learning-objectives/"
     column_text: Learn more about the learning objectives for the above cases.
     column_button:
       text: Learn More
-      url: 
+      url: "/learning-objectives/"
   - column_title:
       text: References
-      url: 
+      url: "/references/"
     column_text: View the references used in the making of the above cases.
     column_button:
       text: References
-      url: 
-cases:
-- title: A Mysterious Mass
-  slide: AMM Page 1
-- title: The Suspicious Lesion
-  slide: TSL Page 1
-- title: A Night in the E.R.
-  slide: NER Page 1
+      url: "/references/"
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
