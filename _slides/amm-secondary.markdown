@@ -12,13 +12,13 @@ radio_buttons:
     nodes, and MALT. Dense aggregations of MALT can be found in which layer of the
     gastrointestinal tract?
   options:
-  - option_text: A) Mucosa and Submucosa
+  - option_text: "**A) Mucosa and Submucosa**"
     is_correct: true
-  - option_text: B) Muscularis externa
+  - option_text: "**B) Muscularis externa**"
     is_correct: false
-  - option_text: C) Serosa and Adventitia
+  - option_text: "**C) Serosa and Adventitia**"
     is_correct: false
-  - option_text: D) All of the above
+  - option_text: "**D) All of the above**"
     is_correct: false
 ---
 
