@@ -3,7 +3,7 @@ title: TSL Intro
 date: 2017-04-12 17:19:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 14
+position: 18
 links:
 - link_text: Thymus
   slide: TSL Page 1
