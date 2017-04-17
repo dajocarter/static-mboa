@@ -57,10 +57,10 @@ home_sections:
   columns:
   - column_title:
       text: Pre-Flip Assignment
-    column_text: "Download the Pre-Flip Assignment before you begin the cases."
+    column_text: Download the Pre-Flip Assignment before you begin the cases.
     column_button:
       text: Download
-      url:
+      url: 
 - section_title: Cases
   columns:
   - column_title:
@@ -74,18 +74,18 @@ home_sections:
   columns:
   - column_title:
       text: Learning Objectives
-      url:
-    column_text: "Learn more about the learning objectives for the above cases."
+      url: 
+    column_text: Learn more about the learning objectives for the above cases.
     column_button:
       text: Learn More
-      url:
+      url: 
   - column_title:
       text: References
-      url:
-    column_text: "View the references used in the making of the above cases."
+      url: 
+    column_text: View the references used in the making of the above cases.
     column_button:
       text: References
-      url:
+      url: 
 cases:
 - title: A Curious Cardiovascular Case
   slide: Intro
