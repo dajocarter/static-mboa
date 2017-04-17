@@ -167,4 +167,14 @@ footer {
     border-color: #b92c28;
     color: #fff;
   }
+
+  label {
+    position: relative;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    left: 0;
+    margin: 3px 0 0;
+  }
 }
