@@ -14,6 +14,10 @@ layout: default
       {% include checkboxes.html content=page.checkboxes.instructions_text options=page.checkboxes.options %}
     {% endif %}
 
+    {% if page.radio_buttons %}
+      {% include radio_buttons.html content=page.radio_buttons.instructions_text options=page.radio_buttons.options %}
+    {% endif %}
+
     {% if page.labels %}
       {% include labeling.html labels=page.labels %}
     {% endif %}

@@ -1,0 +1,14 @@
+{% if include.content %}
+    {{ include.content }}
+{% endif %}
+
+{% if include.options %}
+<div class="radio-buttons">
+  {% for option in include.options %}
+  <div class="radio">
+    <label for="input-{{ forloop.index }}">
+      <input type="radio" id="input-{{ forloop.index }}" name="radio-group" value="{{ option.is_correct }}">{{ option.option_text }}</label>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
