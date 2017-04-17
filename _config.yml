@@ -52,6 +52,40 @@ homepage_sections:
   - column_title:
       text: A Night in the E.R.
       url: "//histo.kayakai.com/a-night-in-the-er/172200"
+home_sections:
+- section_title: Before You Begin
+  columns:
+  - column_title:
+      text: Pre-Flip Assignment
+    column_text: "Download the Pre-Flip Assignment before you begin the cases."
+    column_button:
+      text: Download
+      url:
+- section_title: Cases
+  columns:
+  - column_title:
+      text: A Curious Cardiovascular Case
+      url: "//embryo.kayakai.com/slides/175400"
+    column_text: "*You are a successful obstetrician with a busy schedule today...*"
+    column_button:
+      text: Start the Case
+      url: "//embryo.kayakai.com/slides/175400"
+- section_title: Resources
+  columns:
+  - column_title:
+      text: Learning Objectives
+      url:
+    column_text: "Learn more about the learning objectives for the above cases."
+    column_button:
+      text: Learn More
+      url:
+  - column_title:
+      text: References
+      url:
+    column_text: "View the references used in the making of the above cases."
+    column_button:
+      text: References
+      url:
 cases:
 - title: A Curious Cardiovascular Case
   slide: Intro
