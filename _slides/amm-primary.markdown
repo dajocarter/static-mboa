@@ -6,7 +6,7 @@ categories:
 position: 7
 links:
 - link_text: Hassall’s corpuscles
-  slide: 
+  slide: AMM Hassal's Corpuscles
 - link_text: Epithelioreticular cells
   slide: 
 - link_text: Thymocytes
