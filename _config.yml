@@ -89,8 +89,8 @@ home_sections:
       text: Start the Case
       url: "//histo.kayakai.com/a-mysterious-mass/093200"
   - column_image: 
-    column_text: A 57-year-old female is evaluated for a mammogram with a suspicious
-      lesion...
+    column_text: "*A 57-year-old female is evaluated for a mammogram with a suspicious
+      lesion...*"
     column_title:
       text: The Suspicious Lesion
       url: "//histo.kayakai.com/the-suspicious-lesion/171900"
@@ -98,8 +98,7 @@ home_sections:
       text: Start the Case
       url: "//histo.kayakai.com/the-suspicious-lesion/171900"
   - column_image: 
-    column_text: While working in the emergency room one evening, an unconscious 41-year-old
-      male is rushed into the scene...
+    column_text: "*While working in the emergency room one evening, an unconscious 41-year-old male is rushed into the scene...*"
     column_title:
       text: A Night in the E.R.
       url: "//histo.kayakai.com/a-night-in-the-er/172200"
