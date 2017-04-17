@@ -24,5 +24,5 @@ date: 2017-04-16 21:02:00 -04:00
 * A Night in the ER
 8. Know the histological differences between white and red pulp in the spleen and their principal microscopic features.
 * A Night in the ER
-10. Understand the various functions of the spleen and which of its parts are responsible for these functions.
+9. Understand the various functions of the spleen and which of its parts are responsible for these functions.
 * A Night in the ER
