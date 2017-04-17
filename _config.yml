@@ -44,11 +44,11 @@ homepage_sections:
   - column_image: 
     column_title:
       text: A Curious Cardiovascular Case
-      url: "//embryo.kayakai.com/slides/175400"
+      url: "//embryo.kayakai.com/a-curious-cardiovascular-case/175400"
     column_text: "*You are a successful obstetrician with a busy schedule today...*"
     column_button:
       text: Start the Case
-      url: "//embryo.kayakai.com/slides/175400"
+      url: "//embryo.kayakai.com/a-curious-cardiovascular-case/175400"
 - section_title: Histology Cases
   section_url: "//histo.kayakai.com"
   columns:
