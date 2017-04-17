@@ -65,10 +65,11 @@ home_sections:
   columns:
   - column_title:
       text: Pre-Flip Assignment
+      url: "/uploads/Flipped-Class-Assignment.docx"
     column_text: Download the Pre-Flip Assignment before you begin the cases.
     column_button:
       text: Download
-      url: 
+      url: "/uploads/Flipped-Class-Assignment.docx"
   - column_title:
       text: Pre-Test
     column_text: Take the Pre-Test after you've gone through the Pre-Flip Assignment
