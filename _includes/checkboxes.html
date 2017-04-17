@@ -7,7 +7,7 @@
   {% for option in include.options %}
   <div class="checkbox">
     <label for="input-{{ forloop.index }}">
-      <input type="checkbox" id="input-{{ forloop.index }}" name="checkbox-group" value="{{ option.is_correct }}">{{ option.option_text }}</label>
+      <input type="checkbox" id="input-{{ forloop.index }}" name="checkbox-group" value="{{ option.is_correct }}">{{ option.option_text | markdownify }}</label>
   </div>
   {% endfor %}
 </div>

@@ -7,7 +7,7 @@
   {% for option in include.options %}
   <div class="radio">
     <label for="input-{{ forloop.index }}">
-      <input type="radio" id="input-{{ forloop.index }}" name="radio-group" value="{{ option.is_correct }}">{{ option.option_text }}</label>
+      <input type="radio" id="input-{{ forloop.index }}" name="radio-group" value="{{ option.is_correct }}">{{ option.option_text | markdownify }}</label>
   </div>
   {% endfor %}
 </div>
