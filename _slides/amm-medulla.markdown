@@ -3,7 +3,7 @@ title: AMM Medulla
 date: 2017-04-17 15:08:00 -04:00
 categories:
 - a-mysterious-mass
-position: 19
+position: 17
 links:
 - link_text: Go check-in with your patient.
   slide: AMM Last Page

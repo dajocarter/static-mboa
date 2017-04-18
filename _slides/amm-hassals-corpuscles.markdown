@@ -3,7 +3,7 @@ title: AMM Hassal's Corpuscles
 date: 2017-04-17 14:49:00 -04:00
 categories:
 - a-mysterious-mass
-position: 11
+position: 9
 links:
 - link_text: Go back to reconsider the supportive stroma of the thymus
   slide: AMM Primary
