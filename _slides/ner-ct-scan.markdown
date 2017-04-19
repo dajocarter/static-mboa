@@ -3,7 +3,7 @@ title: NER CT Scan
 date: 2017-04-18 22:42:00 -04:00
 categories:
 - a-night-in-the-er
-position: 27
+position: 25
 links:
 - link_text: Go back and reassess the patient’s vitals.
   slide: NER White Pulp

@@ -3,7 +3,7 @@ title: AMM Thyroid
 date: 2017-04-13 23:23:00 -04:00
 categories:
 - a-mysterious-mass
-position: 3
+position: 1
 links:
 - link_text: Return to investigate the slide from the mysterious mediastinal mass
   slide: AMM Page 1
