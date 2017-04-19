@@ -3,7 +3,7 @@ title: NER White Pulp
 date: 2017-04-18 22:37:00 -04:00
 categories:
 - a-night-in-the-er
-position: 25
+position: 24
 links:
 - link_text: Perform a blood transfusion and CT scan the abdomen and pelvis
   slide: NER CT Scan
