@@ -3,7 +3,7 @@ title: AMM Tertiary
 date: 2017-04-15 23:45:00 -04:00
 categories:
 - a-mysterious-mass
-position: 5
+position: 7
 links:
 - link_text: Reevaluate the thymus classification as a lymphoid organ
   slide: AMM Thymus
