@@ -9,7 +9,7 @@ links:
   slide: NER Surgery
 ---
 
-<ol start=2>
+<ol start="2">
 <li>Splenic artery → ***trabecular artery*** → **penicillar arteriole** → **central arteriole** → ensheathed capillary → **splenic sinus** → **splenic cord** → red pulp vein → trabecular veins → splenic vein</li>
 </ol>
 
