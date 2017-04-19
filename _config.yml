@@ -35,6 +35,7 @@ defaults:
     additional_text: 
     labels:
     - label_description: 
+      label_image:
       options:
       - label_text: 
         answers:
