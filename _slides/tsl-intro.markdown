@@ -6,11 +6,11 @@ categories:
 position: 38
 links:
 - link_text: Thymus
-  slide: TSL Page 1
+  slide: TSL Thymus
 - link_text: Lymph Node
-  slide: TSL Page 1
+  slide: TSL Lymph Node
 - link_text: Spleen
-  slide: TSL Page 1
+  slide: TSL Spleen
 ---
 
 A 57-year-old female is evaluated for a mammogram with a suspicious lesion. Symptoms and history include:
