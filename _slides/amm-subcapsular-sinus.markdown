@@ -3,7 +3,7 @@ title: AMM Subcapsular Sinus
 date: 2017-04-17 15:06:00 -04:00
 categories:
 - a-mysterious-mass
-position: 14
+position: 16
 links:
 - link_text: Return to determine where naïve lymphocytes travel to next
   slide: AMM Adaptive Immunity

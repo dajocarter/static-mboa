@@ -3,7 +3,7 @@ title: NER Secondary
 date: 2017-04-18 23:20:00 -04:00
 categories:
 - a-night-in-the-er
-position: 33
+position: 35
 links:
 - link_text: B-Lymphocytes
   slide: NER B-Lymphocytes
