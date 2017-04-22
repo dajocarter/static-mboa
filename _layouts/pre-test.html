@@ -24,7 +24,7 @@ layout: default
               <div>
                 <label class="list-group-item-text">
                   <input type="radio" name="p{{ q_index }}" value="{{ answer.is_correct }}">
-                  {{ answer.option_text | markdownify }}
+                  {{ answer.option_text }}
                 </label>
               </div>
             {% endfor %}
