@@ -3,7 +3,7 @@ title: TSL Type I Collagen
 date: 2017-04-21 22:40:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 45
+position: 48
 links:
 - link_text: Go back and reevaluate the dark black lines
   slide: TSL Secondary
