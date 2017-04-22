@@ -13,4 +13,4 @@ Innate immunity includes nonspecific, immediate defenses, which do not include l
 
 **List examples of innate immunity throughout the body.**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>

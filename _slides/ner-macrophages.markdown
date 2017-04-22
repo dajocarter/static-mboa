@@ -13,4 +13,4 @@ Macrophages are abundant within splenic cords of the red pulp and ensheath penic
 
 **What is the function of these cells in the spleen?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>

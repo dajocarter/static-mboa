@@ -17,7 +17,7 @@ Thymomas are neoplasms derived from thymic epithelial cells that can display ske
 
 Explain how a T-lymphocyte problem from the thymus contributes to antibody production that is targeting muscle seen in myasthenia gravis.
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 You advise for a [thymectomy](https://www.youtube.com/watch?v=VylU8SFE6R4) (complete surgical resection of the thymus). The thoracoscopic operation was successful. Surgical margins were negative and there was no evidence of macroscopic or microscopic capsular invasion. Intravenous infusion of immunoglobulin G (IgG) helped to remove circulating pathogenic antibodies and the patient improved.
 

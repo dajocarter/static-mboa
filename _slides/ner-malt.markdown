@@ -13,12 +13,12 @@ After a rapid strep test came back positive, you prescribe antibiotics and decid
 
 **What does “MALT” stand for and where is it located?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 **What is the function of MALT?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 **How will removal of his daughter’s tonsils affect her health?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>

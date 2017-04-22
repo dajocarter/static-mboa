@@ -22,7 +22,7 @@ labels:
 
 Nice open circulation flow! <strong>For comparison, write out the steps for <u>closed circulation</u></strong> below.
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 ![NER-pg5.png](/uploads/NER-pg5.png)
 

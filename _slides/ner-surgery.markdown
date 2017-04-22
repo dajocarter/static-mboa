@@ -34,7 +34,7 @@ The patient appears hemodynamically unstable (low blood pressure and/or a high h
 
 What is red pulp and what is its function?
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 Which of the following is the correct order of blood flow in *open circulation* through the spleen?
 

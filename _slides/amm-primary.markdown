@@ -16,7 +16,7 @@ additional_text: |-
 
   What is the function of the thymus?
 
-  <textarea></textarea>
+  <textarea class="form-control" rows="8"></textarea>
 
   Although considered a primary lymphoid organ, the thymus does not contain a stroma of reticulin fibers like many lymphoid organs. Instead, the supporting stroma arises from:
 labels:

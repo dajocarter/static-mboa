@@ -20,7 +20,7 @@ additional_text: |-
 
   **What events occur during positive selection?**
 
-  <textarea></textarea>
+  <textarea class="form-control" rows="8"></textarea>
 
   If lymphocytes pass the positive selection test in the thymic cortex, they move onto their next test in the:
 labels:
@@ -36,4 +36,4 @@ Correct! Adaptive immunity, also known as acquired immunity, develops gradually 
 
 **Why is this system slow to respond initially but faster with subsequent infections?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>

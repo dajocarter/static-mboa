@@ -13,6 +13,6 @@ While checking in with your first patient, you are informed that surgeons perfor
 
 **What are some issues your patient should be aware of after spleen removal and how does the body compensate for the loss of splenic function?**
 
-<textarea></textarea>
+<textarea class="form-control" rows="8"></textarea>
 
 Congratulations! Return to the beginning of the case and play again! Try selecting other options to verify you understand why an answer was incorrect before moving on.
