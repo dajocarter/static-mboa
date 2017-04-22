@@ -10,7 +10,7 @@ links:
 ---
 
 <ol start="2">
-<li>Splenic artery → ***trabecular artery*** → **penicillar arteriole** → **central arteriole** → ensheathed capillary → **splenic sinus** → **splenic cord** → red pulp vein → trabecular veins → splenic vein</li>
+<li>Splenic artery → <strong><em>trabecular artery</em></strong> → <strong>penicillar arteriole</strong> → <strong>central arteriole</strong> → ensheathed capillary → <strong>splenic sinus</strong> → <strong>splenic cord</strong> → red pulp vein → trabecular veins → splenic vein</li>
 </ol>
 
 This choice left out the trabecular artery, reversed the arterioles, and reversed the flow through the splenic sinus and splenic cord.
