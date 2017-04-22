@@ -20,4 +20,4 @@ labels:
       B-lymphocytes), macrophages, dendritic cells, and plasma cells
 ---
 
-The medulla of a lymph node is the innermost region. It contains medullary __________ and medullary __________?
+The medulla of a lymph node is the innermost region. It contains **medullary** __________ and **medullary** __________?
