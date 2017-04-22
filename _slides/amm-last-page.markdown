@@ -3,7 +3,7 @@ title: AMM Last Page
 date: 2017-04-17 15:09:00 -04:00
 categories:
 - a-mysterious-mass
-position: 19
+position: 17
 links:
 - link_text: Return to the Beginning
   slide: AMM Intro
