@@ -43,7 +43,7 @@ additional_text: |-
 
   **(Write your answer down! We will review this at the end)**
 
-  [Outflow-tract-septation.mp4](/uploads/Outflow-tract-septation.mp4)
+  <video controls><source src="/uploads/Outflow-tract-septation.mp4" type="video/mp4"></video>
 
   Defects in the aorticopulmonary septum are primarily due to problems with which of the following?
 
