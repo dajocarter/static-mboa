@@ -6,3 +6,8 @@ categories:
 position: 57
 ---
 
+<ol start="3">
+<li>Afferent lymphatic vessel → **high endothelial venule** → **subcapsular sinus** → **trabecular sinus** → efferent lymphatic vessel</li>
+</ol>
+
+This answer does not correctly flow through the lymph node from cortex, into paracortex, and finally through the medulla.
