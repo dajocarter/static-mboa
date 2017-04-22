@@ -51,7 +51,7 @@ additional_text: |-
 
   ![ASD-process.jpeg](/uploads/ASD-process.jpeg)
 
-  <video><source src="/uploads/Atrial-septation.mp4" type="video/mp4"></video>
+  <video controls><source src="/uploads/Atrial-septation.mp4" type="video/mp4"></video>
 
   There are five primary types of ASD:
 
