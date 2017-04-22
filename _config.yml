@@ -39,19 +39,19 @@ homepage_sections:
   columns:
   - column_title:
       text: A Curious Cardiovascular Case
-      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/175400"
+      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
 - section_title: Histology Cases
   section_url: "//histo.mybrainonanatomy.com"
   columns:
   - column_title:
       text: A Mysterious Mass
-      url: "//histo.mybrainonanatomy.com/a-mysterious-mass/093200"
+      url: "//histo.mybrainonanatomy.com/a-mysterious-mass/amm-intro"
   - column_title:
       text: The Suspicious Lesion
-      url: "//histo.mybrainonanatomy.com/the-suspicious-lesion/171900"
+      url: "//histo.mybrainonanatomy.com/the-suspicious-lesion/tsl-intro"
   - column_title:
       text: A Night in the E.R.
-      url: "//histo.mybrainonanatomy.com/a-night-in-the-er/172200"
+      url: "//histo.mybrainonanatomy.com/a-night-in-the-er/ner-intro"
 home_sections:
 - section_title: Before You Begin
   columns:
@@ -65,11 +65,11 @@ home_sections:
   columns:
   - column_title:
       text: A Curious Cardiovascular Case
-      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/175400"
+      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
     column_text: "*You are a successful obstetrician with a busy schedule today...*"
     column_button:
       text: Start the Case
-      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/175400"
+      url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
 - section_title: Resources
   columns:
   - column_title:
