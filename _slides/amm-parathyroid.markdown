@@ -6,7 +6,7 @@ categories:
 position: 3
 links:
 - link_text: Return to investigate the slide from the mysterious mediastinal mass
-  slide: AMM Page 1
+  slide: AMM Intro
 labels:
 - label_description: PTH binds receptors on osteoblasts. What paracrine factor is
     secreted by osteoblasts that stimulate osteoclasts?
