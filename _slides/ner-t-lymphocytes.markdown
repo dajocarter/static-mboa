@@ -3,7 +3,7 @@ title: NER T-Lymphocytes
 date: 2017-04-18 23:43:00 -04:00
 categories:
 - a-night-in-the-er
-position: 35
+position: 37
 links:
 - link_text: Go talk with the patient’s father
   slide: NER Malt

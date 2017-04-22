@@ -1,7 +1,7 @@
 ---
 title: AMM Lymph Node
 date: 2017-04-13 23:45:00 -04:00
-position: 2
+position: 4
 labels:
 - label_text: Can you label the following lymph node slide?
   label_image: "/uploads/MM-LymphNode-Image_ER-Palatine-Tonsil.png"
