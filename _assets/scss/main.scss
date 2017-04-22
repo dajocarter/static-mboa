@@ -269,3 +269,26 @@ td:last-child,
 th:last-child {
   text-align: center;
 }
+
+.patient-stats {
+  padding-left: 0;
+  list-style: none;
+  width: 75%;
+  margin: 40px auto;
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  li span:first-child {
+    font-weight: bold;
+  }
+
+  span {
+    float: left;
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+}
