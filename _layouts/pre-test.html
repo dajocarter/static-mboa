@@ -14,7 +14,7 @@ layout: default
         {% for problem in page.problems %}
           <div class="list-group-item clearfix">
             {% assign q_index = forloop.index %}
-            <h4 class="list-group-item-heading">{{ q_index }}. {{ problem.text }}</h4>
+            <h4 class="list-group-item-heading">{{ q_index }}. {{ problem.question_text | markdownify }}</h4>
 
             {% if problem.question_image %}
               <img src="{{ problem.question_image }}">
@@ -24,7 +24,7 @@ layout: default
               <div>
                 <label class="list-group-item-text">
                   <input type="radio" name="p{{ q_index }}" value="{{ answer.is_correct }}">
-                  {{answer.option_text}}
+                  {{ answer.option_text | markdownify }}
                 </label>
               </div>
             {% endfor %}
