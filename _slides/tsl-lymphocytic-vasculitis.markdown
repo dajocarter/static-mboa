@@ -3,7 +3,7 @@ title: TSL Lymphocytic vasculitis
 date: 2017-04-22 01:15:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 63
+position: 60
 links:
 - link_text: Return to contemplate the term for inhibiting lymphatic drainage
   slide: TSL Flow 4

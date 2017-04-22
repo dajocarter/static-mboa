@@ -3,7 +3,7 @@ title: TSL Lymphedema
 date: 2017-04-22 01:18:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 65
+position: 62
 links:
 - link_text: Stage 0
   slide: TSL Stage 0

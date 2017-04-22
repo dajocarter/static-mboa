@@ -3,7 +3,7 @@ title: NER Flow 4
 date: 2017-04-18 22:54:00 -04:00
 categories:
 - a-night-in-the-er
-position: 32
+position: 29
 links:
 - link_text: Go back and reassess open circulation order
   slide: NER Surgery

@@ -3,7 +3,7 @@ title: AMM Innate Immunity
 date: 2017-04-17 14:59:00 -04:00
 categories:
 - a-mysterious-mass
-position: 15
+position: 12
 links:
 - link_text: Go back and reflect on lymphocytes and immunity
   slide: AMM Thymocytes

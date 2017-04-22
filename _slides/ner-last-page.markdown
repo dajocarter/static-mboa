@@ -3,7 +3,7 @@ title: NER Last Page
 date: 2017-04-19 23:47:00 -04:00
 categories:
 - a-night-in-the-er
-position: 41
+position: 38
 links:
 - link_text: Return to the Beginning
   slide: NER Intro
