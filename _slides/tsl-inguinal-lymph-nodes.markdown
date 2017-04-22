@@ -3,7 +3,7 @@ title: TSL Inguinal Lymph Nodes
 date: 2017-04-21 23:36:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 51
+position: 49
 links:
 - link_text: Go back and reconsider where lymph from the breast drains
   slide: TSL Type III Collagen

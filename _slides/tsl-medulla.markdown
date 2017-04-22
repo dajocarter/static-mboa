@@ -3,7 +3,7 @@ title: TSL Medulla
 date: 2017-04-22 00:06:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 53
+position: 51
 links:
 - link_text: Return to meditate on the lymph node regions
   slide: TSL Axillary Lymph Nodes
