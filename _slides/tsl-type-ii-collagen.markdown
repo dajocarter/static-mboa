@@ -3,7 +3,7 @@ title: TSL Type II Collagen
 date: 2017-04-21 22:41:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 46
+position: 48
 links:
 - link_text: Go back and reevaluate the dark black lines
   slide: TSL Secondary

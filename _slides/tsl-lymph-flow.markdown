@@ -3,7 +3,7 @@ title: TSL Lymph Flow
 date: 2017-04-22 00:34:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 54
+position: 56
 links:
 - link_text: Flow 1
   slide: TSL Flow 1

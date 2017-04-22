@@ -3,7 +3,7 @@ title: TSL Flow 3
 date: 2017-04-22 00:36:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 57
+position: 59
 links:
 - link_text: Return to imagine the flow of lymph through a node
   slide: TSL Lymph Flow
