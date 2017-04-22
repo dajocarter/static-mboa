@@ -29,18 +29,6 @@ defaults:
     type: slides
   values:
     layout: slide
-    links:
-    - link_text: 
-      slide: 
-    additional_text: 
-    labels:
-    - label_description: 
-      label_image: 
-      options:
-      - label_text: 
-        answers:
-        - 
-        hint_text: 
 permalink: pretty
 homepage_sections:
 - section_title: Embryology Cases
