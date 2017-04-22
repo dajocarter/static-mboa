@@ -14,6 +14,17 @@ jQuery(document).ready(function($) {
       }
     }
     ( value ) ? input.parent('.input-group').addClass('correct').removeClass('false') : input.parent('.input-group').addClass('false').removeClass('correct');
+  });
 
+  $('td input').on('click', function() {
+    var answers = ["high", "low", "normal", "normal"];
+    var index = $(this).attr('name');
+    if ($('input:radio[name=' + index + ']:checked').val() === answers[index]) {
+      $('input:radio[name=' + index + ']').parent().removeClass();
+      $(this).parent().addClass('correct');
+    } else {
+      $('input:radio[name=' + index + ']').parent().removeClass();
+      $(this).parent().addClass('wrong');
+    }
   });
 });
