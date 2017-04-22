@@ -3,7 +3,7 @@ title: AMM Thymus
 date: 2017-04-15 20:06:00 -04:00
 categories:
 - a-mysterious-mass
-position: 6
+position: 5
 links:
 - link_text: Primary
   slide: AMM Primary

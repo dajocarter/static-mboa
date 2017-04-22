@@ -3,7 +3,7 @@ title: TSL Secondary
 date: 2017-04-21 22:19:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 46
+position: 45
 links:
 - link_text: Type I Collagen
   slide: TSL Type I Collagen

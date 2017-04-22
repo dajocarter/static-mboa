@@ -3,7 +3,7 @@ title: NER Upper Right
 date: 2017-04-18 12:32:00 -04:00
 categories:
 - a-night-in-the-er
-position: 24
+position: 23
 links:
 - link_text: Continue on to contemplate white pulp.
   slide: NER White Pulp
