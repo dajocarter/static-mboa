@@ -6,7 +6,7 @@ categories:
 position: 11
 links:
 - link_text: Go back and reflect on lymphocytes and immunity
-  slide: AMM Thymocytes
+  slide: AMM Epithelioreticular Cells
 ---
 
 Innate immunity includes nonspecific, immediate defenses, which do not include lymphocytes.
