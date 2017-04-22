@@ -21,6 +21,9 @@ labels:
     answers:
     - Central arteriole
     hint_text: 
+links:
+- link_text: Go back to reconsider the cells forming PALS.
+  slide: NER Secondary
 ---
 
 B-cells form primary and secondary lymphoid nodules (follicles) adjacent to the central artery, but not PALS. Larger lymphoid nodules may contain a germinal center, displacing the central arteriole to the nodule’s periphery (see Junqueira, 13th Ed., Fig. 14-23b).
