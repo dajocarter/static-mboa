@@ -8,7 +8,7 @@ collections:
   slides:
     title: Slides
     output: true
-    permalink: "/:categories/:hour:minute:second"
+    permalink: "/:categories/:title"
   uploads:
     title: Uploads
     output: true
