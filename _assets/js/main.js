@@ -27,4 +27,30 @@ jQuery(document).ready(function($) {
       $(this).parent().addClass('wrong');
     }
   });
+
+  $('#quizSubmit').click(function(e) {
+    e.preventDefault();
+
+    $('label.list-group-item-text').removeClass('correct wrong');
+
+    function scrollTo(element, to, duration) {
+      if (duration < 0) return;
+      var difference = to - element.scrollTop;
+      var perTick = difference / duration * 2;
+
+      setTimeout(function() {
+          element.scrollTop = element.scrollTop + perTick;
+          scrollTo(element, to, duration - 2);
+      }, 10);
+    }
+
+    scrollTo(document.body, 0, 100);
+
+    $("input:checked").each(function(index) {
+      var question = index + 1;
+      var choice = $(this).val();
+
+      ( choice === 'true' ) ? $(this).parent().addClass('correct') : $(this).parent().addClass('wrong');
+    });
+  });
 });

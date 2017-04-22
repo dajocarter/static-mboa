@@ -292,3 +292,13 @@ th:last-child {
     }
   }
 }
+
+#pre-test {
+  label {
+    &.wrong,
+    &.correct {
+      color: #fff;
+      padding: 5px 10px 9px;
+    }
+  }
+}
