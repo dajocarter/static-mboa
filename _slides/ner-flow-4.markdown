@@ -10,6 +10,6 @@ links:
 ---
 
 <ol start="4">
-<li>Splenic artery → trabecular artery → central arteriole → penicillar arteriole → ensheathed capillary → **splenic sinus** → **splenic cord** → red pulp vein → trabecular vein → splenic vein</li>
+<li>Splenic artery → trabecular artery → central arteriole → penicillar arteriole → ensheathed capillary → <strong>splenic sinus</strong> → <strong>splenic cord</strong> → red pulp vein → trabecular vein → splenic vein</li>
 
 Notice that this option reverses the order of flow through the cord and sinus that is seen in open circulation.
