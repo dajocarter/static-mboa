@@ -3,7 +3,7 @@ title: TSL Spleen
 date: 2017-04-20 00:00:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 41
+position: 40
 links:
 - link_text: Go back and reassess the patient’s slide
   slide: TSL Intro

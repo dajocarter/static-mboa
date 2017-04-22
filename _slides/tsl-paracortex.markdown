@@ -3,7 +3,7 @@ title: TSL Paracortex
 date: 2017-04-22 00:06:00 -04:00
 categories:
 - the-suspicious-lesion
-position: 54
+position: 53
 links:
 - link_text: Go learn the flow of lymph through a node
   slide: TSL Lymph Flow
