@@ -3,7 +3,7 @@ title: NER Upper Left
 date: 2017-04-18 12:32:00 -04:00
 categories:
 - a-night-in-the-er
-position: 21
+position: 25
 links:
 - link_text: Return to slides
   slide: NER Intro
