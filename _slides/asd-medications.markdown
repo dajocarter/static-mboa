@@ -1,9 +1,12 @@
 ---
 title: ASD Medications
-date: 2017-04-10 00:46:00 -04:00
+date: 2017-04-10 02:46:00 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 13
+links:
+- link_text: Go Back
+  slide: Correct ASD
 labels:
 - label_description: |-
     However, prescribing medications should be done with caution since most substances introduced to maternal circulation will cross the placenta.
@@ -51,9 +54,6 @@ labels:
     answers:
     - A
     hint_text: Fetal membrane derived from epiblast
-links:
-- link_text: Go Back
-  slide: Correct ASD
 ---
 
 Medications are usually not prescribed to treat ASDs, however some medications may be given to alleviate symptoms associated with ASD (such as furosemide, a diuresis, for congestive heart failure and an ACE inhibitor to manage mitral valve regurgitation).
