@@ -1,6 +1,6 @@
 ---
 title: Correct Etiology
-date: 2017-04-09 22:57:07 -04:00
+date: 2017-04-09 22:57:00 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 10
@@ -51,7 +51,7 @@ additional_text: |-
 
   ![ASD-process.jpeg](/uploads/ASD-process.jpeg)
 
-  [Atrial-septation.mp4](/uploads/Atrial-septation.mp4)
+  <video><source src="/uploads/Atrial-septation.mp4" type="video/mp4"></video>
 
   There are five primary types of ASD:
 
