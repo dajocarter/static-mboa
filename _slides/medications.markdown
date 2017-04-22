@@ -1,6 +1,6 @@
 ---
 title: Medications
-date: 2017-04-10 00:55:00 -04:00
+date: 2017-04-10 05:55:55 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 36
