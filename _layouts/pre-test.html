@@ -14,7 +14,7 @@ layout: default
         {% for problem in page.problems %}
           <div class="list-group-item clearfix">
             {% assign q_index = forloop.index %}
-            <h4 class="list-group-item-heading">{{ q_index }}. {{ problem.question_text | markdownify }}</h4>
+            <h4 class="list-group-item-heading">{{ q_index }}. {{ problem.question_text }}</h4>
 
             {% if problem.question_image %}
               <img src="{{ problem.question_image }}">
