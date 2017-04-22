@@ -80,5 +80,6 @@ problems:
   - is_correct: false
     option_text: "**e.** Metamyelocyte"
   question_image: "/uploads/pretest.png"
+layout: pre-test
 ---
 
