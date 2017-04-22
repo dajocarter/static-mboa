@@ -46,6 +46,9 @@
             {% assign class = "col-sm-6" %}
         {% endcase %}
 
+      {% when 4 %}
+        {% assign class = "col-sm-6" %}
+
       {% else %}
         {% assign col_size = 12 | divided_by: include.links.size %}
         {% assign class = "col-sm-" | append: col_size %}
@@ -53,7 +56,7 @@
 
   <div class="col-xs-12 {{ class }}">
     {% assign related_slide = site.slides | where: 'title', link.slide | first %}
-    <a class="btn btn-primary" href="{{ related_slide.url | relative_url }}">
+    <a href="{{ related_slide.url | relative_url }}">
       <img src="{{ link.link_image }}" alt="{{ related_slide.title }}">
     </a>
   </div>
