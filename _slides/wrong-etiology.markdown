@@ -1,6 +1,6 @@
 ---
 title: Wrong Etiology
-date: 2017-04-09 22:57:00 -04:00
+date: 2017-04-09 22:57:24 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 9
