@@ -202,3 +202,66 @@ footer {
     margin: 3px 0 0;
   }
 }
+
+table {
+  width: 100%;
+  min-width: 466px;
+  table-layout: fixed;
+  border: 1px solid black;
+
+  * {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  a {
+    border: 0;
+  }
+
+  &#stages {
+    thead * {
+      border: 0;
+    }
+  }
+}
+
+tr.scaffolding,
+.scaffolding th,
+.scaffolding td {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+thead tr:last-child th:last-child {
+  width: 13%;
+}
+
+tbody tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 10px;
+}
+
+// tbody tr td:first-child,
+thead tr:last-child th {
+  width: 13%;
+}
+
+td, label {
+  &.wrong {
+    background-color: lighten(red, 10%);
+  }
+
+  &.correct {
+    background-color: #44cf6c;
+  }
+}
+
+td:last-child,
+th:last-child {
+  text-align: center;
+}
