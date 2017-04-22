@@ -10,7 +10,7 @@ links:
 ---
 
 <ol start="3">
-<li>Afferent lymphatic vessel → **high endothelial venule** → **subcapsular sinus** → **trabecular sinus** → efferent lymphatic vessel</li>
+<li>Afferent lymphatic vessel → <strong>high endothelial venule</strong> → <strong>subcapsular sinus</strong> → <strong>trabecular sinus</strong> → efferent lymphatic vessel</li>
 </ol>
 
 This answer does not correctly flow through the lymph node from cortex, into paracortex, and finally through the medulla.
