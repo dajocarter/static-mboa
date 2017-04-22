@@ -13,17 +13,33 @@ body {
   font-size: 16px;
 
   // Padding top by header height + 40px for spacing
-  padding-top: 111px;
+  padding-top: 71px;
 
   // Margin bottom by footer height + 40px for spacing
-  margin-bottom: 260px;
+  margin-bottom: 370px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 310px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 270px;
+  }
 }
 
 main {
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - 291px);
+  min-height: calc(100vh - 441px);
   align-items: center;
+
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 381px);
+  }
+
+  @media (min-width: 992px) {
+    min-height: calc(100vh - 341px);
+  }
 }
 
 .container {
@@ -73,10 +89,18 @@ footer {
   background-color: $navbar-default-bg;
   bottom: 0;
   color: $navbar-default-brand-color;
-  height: 220px;
+  height: 330px;
   margin-top: 20px;
   position: absolute;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 270px;
+  }
+
+  @media (min-width: 992px) {
+    height: 230px;
+  }
 
   .row {
     clear: left;
