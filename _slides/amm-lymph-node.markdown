@@ -32,7 +32,7 @@ labels:
       with lymphocytes, plasma cells, and macrophages
 links:
 - link_text: Return to investigate the slide from the mysterious mediastinal mass
-  slide: AMM Page 1
+  slide: AMM Intro
 ---
 
 Lymph nodes have a capsule extending trabeculae into the parenchyma that is densely packed with lymphocytes. Lymph nodes also have morphologically distinct regions, however notice the lack of a paracortex, medullary cords, medullary sinuses, and lymphoid follicles in the patient’s slide that are seen in lymph nodes.
