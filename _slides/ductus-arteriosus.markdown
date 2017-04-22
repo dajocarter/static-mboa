@@ -5,17 +5,17 @@ categories:
 - a-curious-cardiovascular-case
 position: 29
 links:
-- link_text: I
+- link_text: Aortic Arch I
   slide: Aortic arch I
-- link_text: II
+- link_text: Aortic Arch II
   slide: Aortic arch II
-- link_text: III
+- link_text: Aortic Arch III
   slide: Aortic arch III
-- link_text: IV
+- link_text: Aortic Arch IV
   slide: Aortic arch IV
-- link_text: V
+- link_text: Aortic Arch V
   slide: Aortic arch V
-- link_text: VI
+- link_text: Aortic Arch VI
   slide: Aortic arch VI
 ---
 
