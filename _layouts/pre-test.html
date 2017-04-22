@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="page">
+  <div class="container">
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    <div id="pre-test" class="list-group">
+      <form>
+        {% for problem in page.problems %}
+          <div class="list-group-item clearfix">
+            {% assign q_index = forloop.index %}
+            <h4 class="list-group-item-heading">{{ q_index }}. {{ problem.text }}</h4>
+
+            {% if problem.question_image %}
+              <img src="{{ problem.question_image }}">
+            {% endif %}
+
+            {% for answer in problem.options %}
+              <div>
+                <label class="list-group-item-text">
+                  <input type="radio" name="p{{ q_index }}" value="{{ answer.is_correct }}">
+                  {{answer.option_text}}
+                </label>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+        <div class="list-group-item buttons">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</article>
