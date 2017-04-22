@@ -30,6 +30,10 @@ layout: default
       {% include links.html links=page.links %}
     {% endif %}
 
+    {% if page.image_links %}
+      {% include image_links.html links=page.image_links %}
+    {% endif %}
+
   </div>
 
 </article>
