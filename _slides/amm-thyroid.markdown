@@ -6,7 +6,7 @@ categories:
 position: 1
 links:
 - link_text: Return to investigate the slide from the mysterious mediastinal mass
-  slide: AMM Page 1
+  slide: AMM Intro
 labels:
 - label_description: Follicular cells are what specific type of epithelium?
   options:
