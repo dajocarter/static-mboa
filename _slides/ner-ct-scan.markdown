@@ -5,7 +5,7 @@ categories:
 - a-night-in-the-er
 position: 24
 links:
-- link_text: Go back and reassess the patient’s vitals.
+- link_text: Go back and reassess the patient’s vitals
   slide: NER White Pulp
 ---
 
