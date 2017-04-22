@@ -10,7 +10,7 @@ links:
 additional_text: |-
   **Explain your choice.**
 
-  <textarea class="form-control" rows="8"></textarea>
+  <div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
 
   ![MM-Thymocytes.png](/uploads/MM-Thymocytes.png)
 labels:

@@ -16,7 +16,7 @@ You realize the patient may become immunologically compromised by this injury fr
 
 What is white pulp and how does it participate in immunity?
 
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
 
 The patient has lost a massive amount of blood and his vital signs are as follows:
 

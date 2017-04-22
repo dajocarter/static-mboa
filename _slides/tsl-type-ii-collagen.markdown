@@ -10,5 +10,4 @@ links:
 ---
 
 Type II collagen is heavily glycosylated and stains well with a Trichrome. This type of collagen resists pressure and can be found in:
-
-<input type="text" class="form-control" />
+<div class="form-group"><input type="text" class="form-control" /></div>

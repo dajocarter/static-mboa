@@ -15,7 +15,7 @@ Awesome! Those lymphocytes that recognize MHC pass the positive selection test i
 
 **What is negative selection?**
 
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
 
 ### Histo Scavenger Hunt!
 

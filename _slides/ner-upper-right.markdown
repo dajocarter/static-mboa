@@ -23,10 +23,10 @@ A few medical residents you are shadowing came from Harvard and they are extreme
 Kindly explain to them 3 functions of this majestic organ.
 
 **1)**
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
 
 **2)**
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
 
 **3)**
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>

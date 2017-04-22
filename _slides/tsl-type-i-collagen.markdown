@@ -19,4 +19,4 @@ Type I collagen is most common and resists tensile stresses.
 
 List some places throughout the body were type I collagen can be found:
 
-<textarea class="form-control" rows="8"></textarea>
+<div class="form-group"><textarea class="form-control" rows="8"></textarea></div>
