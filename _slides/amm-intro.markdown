@@ -3,7 +3,7 @@ title: AMM Intro
 date: 2017-04-12 09:32:00 -04:00
 categories:
 - a-mysterious-mass
-position: 0
+position: 2
 links:
 - link_text: Thyroid
   slide: AMM Thyroid
