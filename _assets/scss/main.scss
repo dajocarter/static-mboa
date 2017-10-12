@@ -184,3 +184,23 @@ footer {
     color: #fff;
   }
 }
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+
+  img {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    color: #222;
+    text-shadow: 2px 2px 2px #fff;
+    position: relative;
+  }
+}
