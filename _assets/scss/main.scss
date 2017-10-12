@@ -57,12 +57,10 @@ ul, ol {
   text-align: left;
 }
 
-a.btn {
-  display: block;
+.btn {
   margin: 1rem auto;
   max-width: 460px;
   white-space: normal;
-  width: 100%;
 }
 
 .case-list {
@@ -190,5 +188,139 @@ footer {
     background-repeat: repeat-x;
     border-color: #b92c28;
     color: #fff;
+  }
+
+  label {
+    position: relative;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    left: 0;
+    margin: 3px 0 0;
+  }
+}
+
+table {
+  width: 100%;
+  min-width: 466px;
+  table-layout: fixed;
+  border: 1px solid black;
+
+  * {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  a {
+    border: 0;
+  }
+
+  &#stages {
+    thead * {
+      border: 0;
+    }
+  }
+}
+
+tr.scaffolding,
+.scaffolding th,
+.scaffolding td {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+thead tr:last-child th:last-child {
+  width: 13%;
+}
+
+tbody tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 10px;
+}
+
+// tbody tr td:first-child,
+thead tr:last-child th {
+  width: 13%;
+}
+
+td, label {
+  &.wrong {
+    background-image: linear-gradient(to bottom, #d9534f 0, #c12e2a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  }
+
+  &.correct {
+    background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  }
+}
+
+td:last-child,
+th:last-child {
+  text-align: center;
+}
+
+.patient-stats {
+  padding-left: 0;
+  list-style: none;
+  width: 75%;
+  margin: 40px auto;
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  li span:first-child {
+    font-weight: bold;
+  }
+
+  span {
+    float: left;
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+}
+
+#pre-test {
+  label {
+    &.wrong,
+    &.correct {
+      color: #fff;
+      padding: 5px 10px 9px;
+    }
+  }
+}
+
+.home {
+  width: 100%;
+}
+
+.jumbotron {
+  margin-top: -20px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    position: relative;
+    color: #222;
+    text-shadow: 2px 2px 2px #fff;
   }
 }
