@@ -58,11 +58,9 @@ ul, ol {
 }
 
 a.btn {
-  display: block;
   margin: 1rem auto;
   max-width: 460px;
   white-space: normal;
-  width: 100%;
 }
 
 .case-list {
@@ -300,5 +298,29 @@ th:last-child {
       color: #fff;
       padding: 5px 10px 9px;
     }
+  }
+}
+
+.home {
+  width: 100%;
+}
+
+.jumbotron {
+  margin-top: -20px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    position: relative;
+    color: #222;
+    text-shadow: 2px 2px 2px #fff;
   }
 }
