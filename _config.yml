@@ -106,3 +106,4 @@ exclude:
 - gulpfile.js
 homeurl: "//mybrainonanatomy.com"
 url: "//mybrainonanatomy.com"
+jumbotron_image: "/uploads/mm-pg1.png"
