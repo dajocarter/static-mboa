@@ -125,3 +125,4 @@ exclude:
 - gulpfile.js
 homeurl: "//mybrainonanatomy.com"
 url: "//histo.mybrainonanatomy.com"
+jumbotron_image: "/uploads/UR.png"
