@@ -45,7 +45,7 @@ homepage_sections:
     column_title:
       text: A Curious Cardiovascular Case
       url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
-    column_text: You are a successful obstetrician with a busy schedule today...
+    column_text: "*You are a successful obstetrician with a busy schedule today...*"
     column_button:
       text: Start the Case
       url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
@@ -53,7 +53,7 @@ homepage_sections:
   section_url: "//histo.mybrainonanatomy.com"
   columns:
   - column_image: 
-    column_text: A 33-year-old male presents with an anterior mediastinal mass...
+    column_text: "*A 33-year-old male presents with an anterior mediastinal mass...*"
     column_title:
       text: A Mysterious Mass
       url: "//histo.mybrainonanatomy.com/a-mysterious-mass/amm-intro"
@@ -61,8 +61,8 @@ homepage_sections:
       text: Start the Case
       url: "//histo.mybrainonanatomy.com/a-mysterious-mass/amm-intro"
   - column_image: 
-    column_text: A 57-year-old female is evaluated for a mammogram with a suspicious
-      lesion...
+    column_text: "*A 57-year-old female is evaluated for a mammogram with a suspicious
+      lesion...*"
     column_title:
       text: The Suspicious Lesion
       url: "//histo.mybrainonanatomy.com/the-suspicious-lesion/tsl-intro"
@@ -70,7 +70,7 @@ homepage_sections:
       text: Start the Case
       url: "//histo.mybrainonanatomy.com/the-suspicious-lesion/tsl-intro"
   - column_image: 
-    column_text: While working in the emergency room one evening, an unconscious...
+    column_text: "*While working in the emergency room one evening, an unconscious...*"
     column_title:
       text: A Night in the E.R.
       url: "//histo.mybrainonanatomy.com/a-night-in-the-er/ner-intro"
