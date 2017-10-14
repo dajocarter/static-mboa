@@ -9,8 +9,6 @@ links:
   slide: Amniocentesis
 - link_text: Magnetic resonance imaging (MRI)
   slide: MRI
-- link_text: Ultrasound (US)
-  slide: 27 year old female
 ---
 
 A 27-year-old female is 22 weeks pregnant and here for her doctor’s appointment. Which method of assessment would you like to perform?
