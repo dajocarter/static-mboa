@@ -6,23 +6,18 @@ categories:
 position: 2
 links:
 - link_text: A
-  slide: 'Amniocentesis Wrong Answer #1'
-- link_text: B
-  slide: 'Amniocentesis Correct Answer #2'
-- link_text: C
   slide: 'Amniocentesis Wrong Answer #3'
+- link_text: B
+  slide: 'Amniocentesis Wrong Answer #1'
+- link_text: C
+  slide: 'Amniocentesis Correct Answer #2'
 ---
 
 You begin to prepare the needle and syringe for the procedure. Which of the following is the correct order of structures you must pierce to reach the amniotic fluid for a transabdominal amniocentesis?
 
+**A)** Endometrium → myometrium → perimetrium → amniochorionic membrane → amniotic fluid
 
+**B)** Vagina → cervix → amniochorionic membrane → amniotic fluid
 
-**A)** Vagina → cervix → amniochorionic membrane → amniotic fluid
+**C)** Perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
 
-
-
-**B)** Anterior abdominal wall → perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
-
-
-
-**C)** Anterior abdominal wall → perimetrium → endometrium → myometrium → amniochorionic membrane → amniotic fluid
