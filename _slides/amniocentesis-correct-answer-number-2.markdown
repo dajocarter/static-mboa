@@ -11,7 +11,7 @@ links:
   slide: Ultrasound
 ---
 
-**B)** Anterior abdominal wall → perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
+**C)** Perimetrium → myometrium → endometrium → amniochorionic membrane → amniotic fluid
 
 Correct pathway for a transabdominal amniocentesis…
 
