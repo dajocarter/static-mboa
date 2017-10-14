@@ -1,6 +1,6 @@
 ---
 title: 'Amniocentesis Wrong Answer #3'
-date: 2017-04-05 00:55:20 -04:00
+date: 2017-04-05 00:55:00 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 5
@@ -9,7 +9,7 @@ links:
   slide: Amniocentesis
 ---
 
-**C)** Anterior abdominal wall → perimetrium → endometrium → myometrium → amniochorionic membrane → amniotic fluid
+**A)** Endometrium → myometrium → amniochorionic membrane → amniotic fluid
 
 Nice try, but review the anatomy of the uterus and try again.
 
