@@ -43,6 +43,8 @@ labels:
     - r ventricle hypertrophy
     hint_text: Enlargement of ventricular myocardium
 additional_text: |-
+  https://youtu.be/MmWWoMcGmo0
+
   *But wait!* You notice one more abnormality while analyzing the medical image of your patient related to the following circled structure.
 
   ![PDA.png](/uploads/PDA.png)
