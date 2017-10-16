@@ -30,8 +30,8 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text:
-      slide:
+    - link_text: 
+      slide: 
 permalink: pretty
 homepage_sections:
 - section_title: Embryology Cases
@@ -60,7 +60,7 @@ home_sections:
     column_text: Download the Pre-Flip Assignment before you begin the cases.
     column_button:
       text: Download
-      url:
+      url: 
 - section_title: Cases
   columns:
   - column_title:
@@ -74,18 +74,18 @@ home_sections:
   columns:
   - column_title:
       text: Learning Objectives
-      url:
+      url: 
     column_text: Learn more about the learning objectives for the above cases.
     column_button:
       text: Learn More
-      url:
+      url: 
   - column_title:
       text: References
-      url:
+      url: 
     column_text: View the references used in the making of the above cases.
     column_button:
       text: References
-      url:
+      url: 
 email: barbieaklein@gmail.com
 description: My Brain on Anatomy contains interactive flipped classes for embryology
   and histology developed by Barbie Klein.
