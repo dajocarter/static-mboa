@@ -50,14 +50,14 @@ additional_text: "**List the steps of atrial septation, starting from the septum
   at the end)**\n\n![ASD-process.jpeg](/uploads/ASD-process.jpeg)\n\n<video controls><source
   src=\"/uploads/Atrial-septation.mp4\" type=\"video/mp4\"></video>\n\nSeveral causes
   of ASD exist, including: \n\n* **Foramen primum defect** - the leading edge of septum
-  primum failed to fuse with the endocardial cushions; defect is located _low_ in
+  primum failed to fuse with the endocardial cushions; defect is located __low__ in
   the interatrial septum\n\n* **Foramen secundum defect** - excessive resorption of
   septum primum when forming the foramen secundum may leave an inadequate valve to
   cover foramen ovale (or hypoplastic growth of the septum secundum leaves a foramen
-  ovale too large to be covered by the normal-sized valve); defect is _centrally_-located
+  ovale too large to be covered by the normal-sized valve); defect is __centrally__-located
   within the interatrial septum\n\n* **Sinus venosus defect** - a hole is formed within
   the interatrial septum cranial to foramen ovale caused by abnormal incorporation
-  of the right horn of sinus venosus; defect is located _cranial_ to foramen ovale\n\n*
+  of the right horn of sinus venosus; defect is located __cranial__ to foramen ovale\n\n*
   **Common atrium** - lack of septation\n\n![ASD-locations.jpg](/uploads/ASD-locations.jpg)\n\nAfter
   reviewing the ultrasound image again, you determine that although a septum has formed,
   a  defect has developed in the middle of the interatrial septum. Which type of ASD
