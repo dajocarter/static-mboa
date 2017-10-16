@@ -2,8 +2,7 @@
 title: Learning Objectives
 date: 2017-10-15 22:38:00 -04:00
 links:
-- link_text: "*Congratulations! You completed a couple of curious cardiovascular cases.
-    Go back to the beginning and play again!*"
+- link_text: Return to the beginning
   slide: Intro
 ---
 
@@ -19,3 +18,5 @@ Completely answer the following learning objectives prior to the second exam. Ei
 8.	Explain the embryologic events leading to a VSD
 9.	Define ventricular hypertrophy and explain how it manifests in Tetralogy of Fallot 
 10.	Define patent ductus arteriosus (PDA) and explain the consequences of a PDA in newborns
+
+*Congratulations! You completed a couple of curious cardiovascular cases. Go back to the beginning and play again!*
