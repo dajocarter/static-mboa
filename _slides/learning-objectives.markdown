@@ -1,6 +1,10 @@
 ---
 title: Learning Objectives
 date: 2017-10-15 22:38:00 -04:00
+links:
+- link_text: "*Congratulations! You completed a couple of curious cardiovascular cases.
+    Go back to the beginning and play again!*"
+  slide: Intro
 ---
 
 Completely answer the following learning objectives prior to the second exam. Either turn this assignment in electronically before class or handwritten at the beginning of the exam. 
