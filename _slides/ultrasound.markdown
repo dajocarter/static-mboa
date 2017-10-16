@@ -45,5 +45,6 @@ labels:
   - label_text: "**A)**"
     answers:
     - Atrial septal defect
+additional_text: Which of the following is the most likely cause of this condition?
 ---
 
