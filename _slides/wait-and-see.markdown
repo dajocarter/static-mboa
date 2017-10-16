@@ -9,7 +9,7 @@ links:
   slide: Exam Room 2
 ---
 
-Good idea! About half of all ASDs close on their own over time. Continuing to evaluate the condition throughout pregnancy will determine if the defect resolves on its own after birth or if surgery will be necessary.
+Good idea! About half of all ASDs close on their own over time. Continuing to evaluate the condition throughout pregnancy and parturition will determine if the defect resolves on its own after birth or if surgery will be necessary.
 
 A family is waiting for you in Exam Room 2.
 
