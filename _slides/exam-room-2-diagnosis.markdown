@@ -17,7 +17,7 @@ labels:
 - label_description: |-
     <img class="img-responsive center-block" src="/uploads/Tetralogy-of-Fallot-label.png" />
 
-    Taken together, your patient has four major cardiac defects. This condition is known as **Tetralogy of [Fallot](https://en.wikipedia.org/wiki/Arthur_Fallot)**. Label the anomalies indicated below.
+    Taken together, your patient has four major cardiac defects. This condition is known as **Tetralogy of Fallot**. Label the four anomalies seen in this condition indicated below.
   options:
   - label_text: "**A)**"
     answers:
