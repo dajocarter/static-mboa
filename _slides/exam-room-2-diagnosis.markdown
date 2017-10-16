@@ -5,13 +5,13 @@ categories:
 - a-curious-cardiovascular-case
 position: 25
 links:
-- link_text: Ductus Venous
+- link_text: Ductus venous
   slide: Ductus venosus
-- link_text: Duct of Bellini
+- link_text: Duct of bellini
   slide: Duct of Bellini
-- link_text: Ductus Deferens
+- link_text: Ductus deferens
   slide: Ductus deferens
-- link_text: Ductus Arteriosus
+- link_text: Ductus arteriosus
   slide: Ductus Arteriosus
 labels:
 - label_description: |-
