@@ -18,22 +18,22 @@ labels:
     tract septation.
   label_image: "/uploads/Outflow-tract-septation.png"
   options:
-  - option_text: "**A)**"
+  - label_text: "**A)**"
     answers:
     - pulmonary channel
     - pulmonary trunk
     hint_text: A channel from the left ventricle to pulmonary circulation
-  - option_text: "**B)**"
+  - label_text: "**B)**"
     answers:
     - muscular IV septum
     - muscular interventricular septum
     hint_text: Tissue that grows from the floor of the primitive ventricle
-  - option_text: "**C)**"
+  - label_text: "**C)**"
     answers:
     - Aortic channel
     - ascending aorta
     hint_text: A channel from the right ventricle to systemic circulation
-  - option_text: "**D)**"
+  - label_text: "**D)**"
     answers:
     - membranous IV septum
     - membranous interventricular septum
