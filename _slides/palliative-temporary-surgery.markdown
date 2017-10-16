@@ -5,7 +5,7 @@ categories:
 - a-curious-cardiovascular-case
 position: 38
 links:
-- link_text: Continue to the flipped class learning objectives.
+- link_text: Continue to the flipped class learning objectives
   slide: Learning Objectives
 ---
 
