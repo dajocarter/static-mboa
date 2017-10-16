@@ -38,8 +38,8 @@ labels:
     - Left atrium
     - L atrium
     hint_text: Receives the pulmonary veins
-- label_description: While scanning, you notice a hole between two chambers. Name
-    this anomaly.
+- label_description: While scanning, you notice an abnormally large hole between two
+    chambers. Name this anomaly that would be present in the neonate.
   label_image: "/uploads/ASD-US.png"
   options:
   - label_text: "**A)**"
