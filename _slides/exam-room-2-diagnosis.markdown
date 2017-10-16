@@ -14,10 +14,10 @@ links:
 - link_text: Ductus Arteriosus
   slide: Ductus Arteriosus
 labels:
-- label_description: Taken together, your patient has four major cardiac defects.
-    This condition is known as **Tetralogy of [Fallot](https://en.wikipedia.org/wiki/Arthur_Fallot)**.
-    Label the anomalies indicated below.
-  label_image: "/uploads/Tetralogy-of-Fallot-label.png"
+- label_description: |-
+    <img class="img-responsive center-block" src="/uploads/Tetralogy-of-Fallot-label.png" />
+
+    Taken together, your patient has four major cardiac defects. This condition is known as **Tetralogy of [Fallot](https://en.wikipedia.org/wiki/Arthur_Fallot)**. Label the anomalies indicated below.
   options:
   - label_text: "**A)**"
     answers:
