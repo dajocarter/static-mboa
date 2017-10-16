@@ -49,10 +49,10 @@ additional_text: |-
 
   **Select:**
 
-  A. If only 1, 2, and 3 are correct
-  B. If only 1 and 3 are correct
-  C. If only 2 and 4 are correct
-  D. If only 4 is correct
+       A. If only 1, 2, and 3 are correct
+       B. If only 1 and 3 are correct
+       C. If only 2 and 4 are correct
+       D. If only 4 is correct
 
   1. Primary heart field
 
