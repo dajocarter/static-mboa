@@ -1,6 +1,6 @@
 ---
 title: Correct ASD
-date: 2017-04-10 00:33:33 -04:00
+date: 2017-04-10 00:33:00 -04:00
 categories:
 - a-curious-cardiovascular-case
 position: 12
@@ -15,9 +15,9 @@ links:
 
 Nice work! Notice the specific locations for ASDs:
 
-* **Sinus venous** (SVASD) – high in the interatrial septum
-* **Foramen secundum** (OSASD) – in the middle of the interatrial septum
-* **Foramen primum** (OPASD) – low in the intertrial septum
+* **Sinus venous defect** (SVASD) – high in the interatrial septum
+* **Foramen secundum defect** (OSASD) – in the middle of the interatrial septum
+* **Foramen primum defect** (OPASD) – low in the intertrial septum
 
 ![ASDs-boxed.png](/uploads/ASDs-boxed.png)
 
