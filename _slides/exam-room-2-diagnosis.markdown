@@ -50,3 +50,4 @@ additional_text: |-
   Identify this structure.
 ---
 
+You conclude the diagnosis is **tetralogy of Fallot**. This anomaly occurs in about 9.6/10,000 births and is the most frequent anomaly of the outflow tract (Sadler, 2015). 
