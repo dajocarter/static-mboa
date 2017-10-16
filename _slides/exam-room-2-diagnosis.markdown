@@ -17,7 +17,7 @@ labels:
 - label_description: |-
     <img class="img-responsive center-block" src="/uploads/Tetralogy-of-Fallot-label.png" />
 
-    Taken together, your patient has four major cardiac defects. Label the four anomalies seen in this condition indicated below.
+    Taken together, your patient has four major cardiac defects. Label the four anomalies seen in this condition.
   options:
   - label_text: "**A)**"
     answers:
