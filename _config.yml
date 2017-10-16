@@ -26,22 +26,22 @@ defaults:
   values:
     layout: slide
     links:
-    - link_text: 
-      slide: 
-    additional_text: 
+    - link_text:
+      slide:
+    additional_text:
     labels:
-    - label_description: 
+    - label_description:
       options:
-      - label_text: 
+      - label_text:
         answers:
-        - 
-        hint_text: 
+        -
+        hint_text:
 permalink: pretty
 homepage_sections:
 - section_title: Embryology Cases
   section_url: "//embryo.mybrainonanatomy.com"
   columns:
-  - column_image: 
+  - column_image:
     column_title:
       text: A Curious Cardiovascular Case
       url: "//embryo.mybrainonanatomy.com/a-curious-cardiovascular-case/intro"
@@ -52,7 +52,7 @@ homepage_sections:
 - section_title: Histology Cases
   section_url: "//histo.mybrainonanatomy.com"
   columns:
-  - column_image: 
+  - column_image:
     column_text: "*A 33-year-old male presents with an anterior mediastinal mass...*"
     column_title:
       text: A Mysterious Mass
@@ -60,7 +60,7 @@ homepage_sections:
     column_button:
       text: Start the Case
       url: "//histo.mybrainonanatomy.com/a-mysterious-mass/amm-intro"
-  - column_image: 
+  - column_image:
     column_text: "*A 57-year-old female is evaluated for a mammogram with a suspicious
       lesion...*"
     column_title:
@@ -69,7 +69,7 @@ homepage_sections:
     column_button:
       text: Start the Case
       url: "//histo.mybrainonanatomy.com/the-suspicious-lesion/tsl-intro"
-  - column_image: 
+  - column_image:
     column_text: "*While working in the emergency room one evening, an unconscious...*"
     column_title:
       text: A Night in the E.R.
@@ -79,13 +79,13 @@ homepage_sections:
       url: "//histo.mybrainonanatomy.com/a-night-in-the-er/ner-intro"
 - section_title: Learn More About the Cases
   columns:
-  - column_image: 
+  - column_image:
     column_text: Watch this [video](https://www.youtube.com/watch?v=iQWvc6qhTds) explaining
       what a flipped class is, and then check out this [infographic](https://www.knewton.com/wp-content/uploads/flipped-classroom-1.jpg)
       to learn more about flipped classes.
     column_title:
       text: What is a Flipped Class?
-  - column_image: 
+  - column_image:
     column_text: Download the HAPS 2015 Workshop Presentation as a [.pptx file](/uploads/HAPS-2015-Flipped-Histo-Workshop.pptx),
       a [.ppt file](/uploads/HAPS-2015-Flipped-Histo-Workshop.ppt), or a [.pdf file](/uploads/HAPS-2015-Flipped-Histo-Workshop.pdf).
       Also available for download is my [AAA 2015 poster](/uploads/AAA-2015-Flipped-Class-Poster.pdf).
@@ -105,5 +105,5 @@ exclude:
 - package.json
 - gulpfile.js
 homeurl: "//www.mybrainonanatomy.com"
-url: "//mybrainonanatomy.com"
+url: "//www.mybrainonanatomy.com"
 jumbotron_image: "/uploads/mm-pg1.png"
