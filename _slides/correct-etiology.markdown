@@ -47,13 +47,13 @@ labels:
     hint_text: Masses of tissue that grow into the atrioventricular (AV) canal
 additional_text: "**List the steps of atrial septation, starting from the septum primum
   and ending with foramen ovale.**\n\n**(Write your answer down! We will review this
-  at the end)**\n\n![ASD-process.jpeg](/uploads/ASD-process.jpeg)\n\n<video controls><source
-  src=\"/uploads/Atrial-septation.mp4\" type=\"video/mp4\"></video>\n\nSeveral causes
-  of ASD exist, including: \n\n* **Foramen primum defect** - the leading edge of septum
-  primum failed to fuse with the endocardial cushions; defect is located __low__ in
-  the interatrial septum\n\n* **Foramen secundum defect** - excessive resorption of
-  septum primum when forming the foramen secundum may leave an inadequate valve to
-  cover foramen ovale (or hypoplastic growth of the septum secundum leaves a foramen
+  at the end)**\n\n![ASD-process.jpeg](/uploads/ASD-process.jpeg)\n\n<video controls
+  style=\"margin-bottom: 2rem;\"><source src=\"/uploads/Atrial-septation.mp4\" type=\"video/mp4\"></video>\n\nSeveral
+  causes of ASD exist, including: \n\n* **Foramen primum defect** - the leading edge
+  of septum primum failed to fuse with the endocardial cushions; defect is located
+  __low__ in the interatrial septum\n\n* **Foramen secundum defect** - excessive resorption
+  of septum primum when forming the foramen secundum may leave an inadequate valve
+  to cover foramen ovale (or hypoplastic growth of the septum secundum leaves a foramen
   ovale too large to be covered by the normal-sized valve); defect is __centrally__-located
   within the interatrial septum\n\n* **Sinus venosus defect** - a hole is formed within
   the interatrial septum cranial to foramen ovale caused by abnormal incorporation
