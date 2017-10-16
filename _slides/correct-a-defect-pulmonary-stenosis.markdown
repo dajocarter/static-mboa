@@ -73,4 +73,4 @@ Correct!
 
 ![Stenosis-vs-atresia.png](/uploads/Stenosis-vs-atresia.png)
 
-**Pulmonary stenosis** can occur from asymmetrical division during septation of the outflow tract. This may cause **membranous ventricular septal defect **resulting in malalignment of the outflow tract channels.
+**Pulmonary stenosis** can occur from asymmetrical division during septation of the outflow tract. This may cause **membranous ventricular septal defect** resulting in malalignment of the outflow tract channels.
