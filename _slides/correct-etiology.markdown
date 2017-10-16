@@ -46,9 +46,9 @@ labels:
     - fused endocardial cushions
     hint_text: Masses of tissue that grow into the atrioventricular (AV) canal
 additional_text: |-
-  **List the steps of atrial septation, starting from the septum primum and ending with foramen ovale.
+  **List the steps of atrial septation, starting from the septum primum and ending with foramen ovale.**
 
-  \(Write your answer down! We will review this at the end)**
+  \**(Write your answer down! We will review this at the end)**
 
   ![ASD-process.jpeg](/uploads/ASD-process.jpeg)
 
