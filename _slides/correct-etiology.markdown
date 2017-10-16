@@ -31,6 +31,7 @@ labels:
   - label_text: "**C)**"
     answers:
     - foramen secundum
+    - ostium secundum
     hint_text: A hole formed by apoptosis in the cranial part of the first partition
   - label_text: "**D)**"
     answers:
