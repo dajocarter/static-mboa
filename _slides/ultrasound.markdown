@@ -45,6 +45,7 @@ labels:
   - label_text: "**A)**"
     answers:
     - Atrial septal defect
+    hint_text: A defect in the interatrial wall, commonly abbreviated "ASD"
 additional_text: Which of the following is the most likely cause of this condition?
 ---
 
