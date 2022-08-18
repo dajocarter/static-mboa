@@ -22,7 +22,7 @@ labels:
     answers:
     - pulmonary channel
     - pulmonary trunk
-    hint_text: A channel from the left ventricle to pulmonary circulation
+    hint_text: A channel from the left ventricle to the lungs
   - label_text: "**B)**"
     answers:
     - muscular IV septum
